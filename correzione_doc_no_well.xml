@@ -1,0 +1,14 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<docu>
+    <element>
+        <child_element/>
+    </element>
+
+    <sibling_element/>
+
+    <nowell> <!-- nowell è ora correttamente chiuso -->
+        <over> <!-- over è ora correttamente annidato -->
+        </over>
+    </nowell>
+
+</docu>
