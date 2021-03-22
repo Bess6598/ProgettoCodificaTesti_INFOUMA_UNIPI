@@ -9,3 +9,4 @@
   * correggerlo (commentando)
   * aggiungere un figlio (child) ad un elmento
   * aggiungere un fratello (sibling) ad un elemento
+* __Esercizio CDDATA:__ inserire all'interno di un tag un frammento di codice HTML
