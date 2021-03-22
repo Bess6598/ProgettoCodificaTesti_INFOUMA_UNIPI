@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Inserire all'interno di un tag un frammento di codice HTML.
+  Filename: esercizio_CDDATA.xml
+  Author: Carolina Sgherri
+  Date: 22/03/2021 -->
+<document>
+    <htmlCode>
+        <![CDATA[
+            <p>Hello, world!</p>
+        ]]>
+    </htmlCode>
+</document>
