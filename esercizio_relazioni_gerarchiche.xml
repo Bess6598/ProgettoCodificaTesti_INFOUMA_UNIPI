@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Scrivere e fare il check di un xml non opportunatamente annidato.
+  Filename: esercizio_relazioni_gerarchiche.xml
+  Author: Carolina Sgherri
+  Date: 22/03/2021 -->
+<document>  <!-- Start tag has wrong closing tag -->
+    <right_element>
+
+    </right_element>
+
+    <wrong_element_1>
+        <wrong_element_2>   <!-- Element wrong_element2 is not closed -->
+    </wrong_element_1>
+        </wrong_element_2>  <!-- Wrong closing tag name -->
+
+</document>     <!-- Unexpected tokens -->
