@@ -15,7 +15,7 @@
   * ___Esercizio DTD 2___: definire un elemento root _TEI_ con elementi figli:
     *  _header_ (obbligatoria un occorrenza) i cui attributi sono _type_ (fixed, CDDATA, "intestazione") e _lang_ (opzionale, NMTOKEN)
     *  _facsimile_ (opzionale una occorrenza) i cui attributi sono _source_ (obbligatorio) e _ref_ (opzionale, IDREFS)
-    *  _testo_ (obbligatorio almeno un occorrenza) un mixed content con possibile elemento _<seg>_. Gli attributi di testo sono id (obbligatorio, ID) e type (opzionale, contenuto testuale)
+    *  _testo_ (obbligatorio almeno un occorrenza) un mixed content con possibile elemento _\<seg\>_. Gli attributi di testo sono id (obbligatorio, ID) e type (opzionale, contenuto testuale)
   * ___Esercizio DTD 3___: 
     *  ___Esercizio DTD 3 A___: includere all'interno di un documento XML la dichiarazione del tipo, definire internamente gli elementi, gli attributi e validare
     *  ___Esercizio DTD 3 B___: inserire nel prologo del documento XML dell'_esercizio DTD 3 A_ la dichiarazione del tipo di documento e validare
