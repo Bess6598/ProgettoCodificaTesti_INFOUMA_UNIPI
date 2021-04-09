@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE menu [
+        <!ELEMENT menu (cibo)*>
+
+        <!ELEMENT cibo (nome, descrizione?, prezzo+, calorie)>
+        <!ATTLIST cibo id ID #REQUIRED>
+
+        <!ELEMENT nome (#PCDATA)>
+
+        <!ELEMENT descrizione (#PCDATA)>
+
+        <!ELEMENT prezzo (#PCDATA)>
+        <!ATTLIST prezzo valuta (EUR|RUB|USD) #REQUIRED>
+
+        <!ELEMENT calorie (#PCDATA)>
+        <!ATTLIST calorie unità_misura (Kcal|cal) #REQUIRED>
+        ]>
+<menu>
+    <cibo id="cibo1">
+        <nome>Ravioli ricotta e spinaci</nome>
+        <descrizione>
+            Pasta fresca all'uovo condita con burro e salvia.
+        </descrizione>
+        <prezzo valuta="EUR">4,95</prezzo>
+        <calorie unità_misura="Kcal">491</calorie>
+    </cibo>
+    <cibo id="cibo2">
+        <nome>Tiramisù</nome>
+        <descrizione>
+            Uno dei dolci più amati della tradizione italiana.
+        </descrizione>
+        <prezzo valuta="RUB">445.16</prezzo>
+        <calorie unità_misura="cal">544000</calorie>
+    </cibo>
+    <cibo id="cibo3">
+        <nome>Filetto di maiale</nome>
+        <prezzo valuta="USD">9,40</prezzo>
+        <prezzo valuta="EUR">7,97</prezzo>
+        <calorie unità_misura="Kcal">785</calorie>
+    </cibo>
+</menu>
