@@ -1,0 +1,14 @@
+<!ELEMENT menu (cibo)*>
+
+<!ELEMENT cibo (nome, descrizione?, prezzo+, calorie)>
+<!ATTLIST cibo id ID #REQUIRED>
+
+<!ELEMENT nome (#PCDATA)>
+
+<!ELEMENT descrizione (#PCDATA)>
+
+<!ELEMENT prezzo (#PCDATA)>
+<!ATTLIST prezzo valuta (EUR|RUB|USD) #REQUIRED>
+
+<!ELEMENT calorie (#PCDATA)>
+<!ATTLIST calorie unità_misura (Kcal|cal) #REQUIRED>
