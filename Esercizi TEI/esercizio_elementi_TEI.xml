@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Marcare un testo plain text di circa 3000 caratteri a piacere.
+  Filename: esercizio_elementi_TEI.xml
+  Author: Carolina Sgherri
+  Date: 16/05/2021 -->
+
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <title>Testo d'esempio</title>
+        <respStmt>
+          <resp>Conversione TEI a cura di</resp>
+          <name>Carolina Sgherri</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Carolina Sgherri</publisher>
+        <date>16/05/2021</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <p>No source: this is an original work.</p>
+      </sourceDesc>
+
+    </fileDesc>
+
+  </teiHeader>
+
+  <text>
+    <body>
+      <div>
+          <p>
+            <list>
+              <head>Questo è un testo di esempio per l'utilizzo di vari elementi TEI come:</head>
+
+              <label>I puntatori</label>
+              <item><ptr target="#puntatoreEsempio"/></item>
+
+              <label>Le note</label>
+              <item><note n="1"> Questa è una nota </note></item>
+
+              <label>I glossa</label>
+              <item><gloss target="#targetEsempio">una spiegazione</gloss></item>
+
+              <label>I nomi marcati</label>
+              <item><emph>nome marcato d'esempio</emph></item>
+
+              <label>I riferimenti</label>
+              <item><rs type="tipoEsempio">riferimento</rs></item>
+
+              <label>I termini</label>
+              <item><term>termine tecnico</term></item>
+
+            </list>
+          </p>
+      </div>
+    </body>
+  </text>
+
+</TEI>
