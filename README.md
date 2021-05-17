@@ -27,8 +27,10 @@
     * verificare che sia ben formato con _xmllint_
   * ___Esercizio TEI 2___: utilizzare puntatori, note, liste, glossa, marcare nomi, riferimenti e termini
   * ___Esercizio TEI 3___: esercitarsi con varie tipologie di documento
-    * codificare usando gli opportuni elementi TEI un __articolo di rivista__
-    * codificare usando gli opportuni elementi TEI una __cartolina__
+    * codificare usando gli opportuni elementi TEI un [__articolo di rivista__][3]
+    * codificare usando gli opportuni elementi TEI una [__cartolina__][4]
 
 [1]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/src/doc-no-well.xml "doc-no-well.xml"
 [2]: https://github.com/angelodel80/corsoCodifica "Repository del corso"
+[3]: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037552
+[4]: https://github.com/angelodel80/corsoCodifica/blob/master/progetto-esame/ProgettoCartoline/Scan_Cartoline_jpg/7694-100F.jpg
