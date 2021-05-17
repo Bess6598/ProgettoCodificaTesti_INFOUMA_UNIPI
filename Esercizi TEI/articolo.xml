@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Codifica di un articolo scientifico.
+  Filename: articolo.xml
+  Author: Carolina Sgherri
+  Date: 16/05/2021 -->
+
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <title>Mine, Yours, Ours? Sharing Data on Human Genetic Variation</title>
+        <respStmt>
+          <resp>Conversione TEI a cura di</resp>
+          <name>Carolina Sgherri</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <distributor>Plos One</distributor>
+        <availability>
+         <p>This is an open-access article distributed under the terms of the Creative Commons Attribution License.</p>
+        </availability>
+        <date when="05/06/2012">June 5, 2012</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>
+          <title>Mine, Yours, Ours? Sharing Data on Human Genetic Variation</title>
+          <author>N. Milia</author>
+          <author>A. Congiu</author>
+          <author>P. Anagnostou</author>
+          <author>F. Montinaro</author>
+          <author>M. Capocasa</author>
+          <author>E. Sanna</author>
+          <author>G. D. Bisol</author>
+          <publisher>Plos One</publisher>
+          <date when="05/06/2012">June 5, 2012</date>
+        </bibl>
+      </sourceDesc>
+
+    </fileDesc>
+
+  </teiHeader>
+
+  <text>
+    <body>
+
+      <div type="section" n="1">
+        <head>Abstract</head>
+        <p>
+          The achievement of a robust, effective and responsible form of data
+          sharing is currently regarded as a priority for biological and bio-medical
+          research. Empirical evaluations of data sharing may be regarded as an
+          indispensable first step in the identification of critical aspects and
+          the development of strategies aimed at increasing availability of research
+          data for the scientific community as a whole.
+        </p>
+        <p>
+          Research concerning human genetic variation represents a potential
+          forerunner in the establishment of widespread sharing of primary datasets.
+          However, no specific analysis has been conducted to date in order to ascertain
+          whether the sharing of primary datasets is common-practice in this research
+          field. To this aim, we analyzed a total of <num value="543">543</num>
+          <term>mitochondrial</term> and <term>Y chromosomal datasets</term>
+          reported in 508 papers indexed in the Pubmed database from
+          <date when="2008">2008</date> to <date when="2011">2011</date>. A
+          substantial portion of datasets (<num value="21.9%">21.9%</num>) was found
+          to have been withheld, while neither strong editorial policies nor high
+          impact factor proved to be effective in increasing the sharing rate beyond
+          the current figure of <num value="80.5%">80.5%</num>. Disaggregating datasets
+          for research fields, we could observe a substantially lower sharing
+          in medical than evolutionary and forensic genetics, more evident for
+          whole <term>mtDNA sequences</term> (<num value="15.0%">15.0%</num>
+          vs <num value="99.6%">99.6%</num>).
+        </p>
+        <p>
+          The low rate of positive responses to e-mail requests sent to corresponding
+          authors of withheld datasets (<num value="28-6%">28.6%</num>) suggests
+          that sharing should be regarded as a prerequisite for final paper
+          acceptance, while making authors deposit their results in open online
+          databases which provide data quality control seems to provide the
+          best-practice standard.Finally, we estimated that
+          <num value="29.8%">29.8%</num> to <num value="32.9%">32.9%</num> of
+          total resources are used to generate withheld datasets, implying that
+          an important portion of research funding does not produce shared knowledge.
+          By making the scientific community and the public aware of this important aspect,
+          we may help popularize a more effective culture of data sharing.
+        </p>
+      </div>
+
+      <div type="serction" n="2">
+        <head>Introduction</head>
+        <p>
+          There is now wide consensus among researchers about the importance of
+          achieving an effective, responsible and robust form of data sharing to
+          advance scientific progress <ptr target="#note1"/>[1], <ptr target="#note2"/>[2].
+        </p>
+        <p>
+          From a historical point of view, the first people to mention the need
+          to guarantee unrestricted availability of research data for scientific
+          reuse was the American sociologist, Robert King Merton, in
+          <date when="1942">1942</date>. In his seminal essay “The Normative
+          Structure of Science”, Merton included the common ownership of
+          scientific discoveries (communalism) and the scrutiny for errors and
+          inconsistencies to which all forms of knowledge should undergo (organized
+          skepticism) among the main ethical principles of science <ptr target="#note3"/>[3].
+          A review of more recent scientific literature shows that the issue of
+          data sharing has not been ignored in the last half century
+          <ptr target="#note4"/>[4], <ptr target="#note5"/>[5].
+        </p>
+        <p>
+          However, it is only in the last two decades that it has become an explicit
+          priority for biological and biomedical research <ptr target="#note6"/>[6],
+          <ptr target="#note7"/>[7], due to the rapid increase in the production
+          of data following the diffusion of computer-assisted technologies and
+          digitalization techniques. Accordingly, various strategies have been
+          set up to encourage researchers to share their results, including
+          organization of ad hoc meetings and the development of explicit policies
+          by scientific Journals and funding bodies <ptr target="#note8"/>[8],
+          <ptr target="#note9"/>[9], while the setting up of primary online
+          databases and repositories has provided permanent tools for data storage
+          and dissemination <ptr target="#note10"/>[10], <ptr target="#note11"/>[11].
+        </p>
+      </div>
+
+      <div type="bibl">
+       <head>References</head>
+       <listBibl>
+
+        <bibl xml:id="note1" >
+          <author>Lang T</author>
+          <title level="a">Advancing global health research through digital technology and sharing data</title>.
+          <publisher>Science 331</publisher>
+          <date when="2011">2011</date>
+        </bibl>
+
+        <bibl xml:id="note2">
+          <author>King G</author>
+          <title level="a">Ensuring the data-rich future of the social sciences.</title>.
+          <publisher>Science 331</publisher>
+          <date when="2011">2011</date>
+        </bibl>
+
+        <bibl xml:id="note3">
+          <author>Merton RK</author>
+          <title level="a">Reprinted in The sociology of science: theoretical and empirical investigations</title>.
+          <publisher>University of Chicago Press</publisher>
+          <date when="1972">1972</date>
+        </bibl>
+
+        <bibl xml:id="note4">
+          <author>Norman C</author>
+          <title level="a">Sharing research data urged</title>
+          <publisher>Science 229</publisher>
+          <date when="1985">1985</date>
+        </bibl>
+
+        <bibl xml:id="note5">
+          <author>Marshall E</author>
+          <title level="a">Data sharing: a declining ethic?</title>
+          <publisher>Science 248</publisher>
+          <date when="1990">1990</date>
+        </bibl>
+
+        <bibl xml:id="note6">
+          <author>DOE</author>
+          <title level="a">Human Genome News</title>
+          <date when="1993">1993</date>
+        </bibl>
+
+        <bibl xml:id="note7">
+          <author>Pennisi E</author>
+          <title level="a">Data sharing. Group calls for rapid release of more genomics data</title>
+          <publisher>Science 324</publisher>
+          <date when="2009">2009</date>
+        </bibl>
+
+        <bibl xml:id="note8">
+          <author>HUGO</author>
+          <title level="a">International Strategy Meeting on Human Genome Sequencing</title>
+          <publisher>Bermuda</publisher>
+          <date when="1996">1996</date>
+        </bibl>
+
+        <bibl xml:id="note9">
+          <author>Piwowar HA</author>
+          <author>Chapman WW</author>
+          <title level="a">Proceedings of the ELPUB 2008 Conference on Electronic Publishing</title>
+          <publisher>Toronto</publisher>
+          <date when="2008">2008</date>
+        </bibl>
+
+        <bibl xml:id="note10">
+          <author>Sayers EW</author>
+          <author>Barrett T</author>
+          <author>Benson DA</author>
+          <author>Bolton E</author>
+          <author>Bryant SH</author>
+          <title level="a"> Database resources of the National Center for Biotechnology Information.</title>
+          <publisher>Nucleic Acids Res 39</publisher>
+          <date when="2011">2011</date>
+        </bibl>
+
+        <bibl xml:id="note11">
+          <author>Piwowar HA</author>
+          <author>Vision TJ</author>
+          <author>Whitlock MC</author>
+          <title level="a">Data archiving is a good investment</title>
+          <publisher>Nature 473</publisher>
+          <date when="2011">2011</date>
+        </bibl>
+
+       </listBibl>
+      </div>
+
+    </body>
+  </text>
+
+</TEI>

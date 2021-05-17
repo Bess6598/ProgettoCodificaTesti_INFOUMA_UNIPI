@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Codifica del fronte di una cartolina.
+  Filename: cartolina.xml
+  Author: Carolina Sgherri
+  Date: 16/05/2021 -->
+
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <title>Cartolina d'esempio</title>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Unipi</publisher>
+        <date>2019</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>
+          <title>Dolci ricordi</title>
+          <author>Giovanni</author>
+          <date>1917</date>
+        </bibl>
+      </sourceDesc>
+
+    </fileDesc>
+
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="fronte">
+        <pb n="1" facs="7694-100F.jpg"/>
+        <figure>
+          <head>Cartolina 100F</head>
+          <figDesc></figDesc>
+          <graphic url="https://github.com/angelodel80/corsoCodifica/blob/master/progetto-esame/ProgettoCartoline/Scan_Cartoline_jpg/7694-100F.jpg"/>
+          <note n="1" place="bottom"> Nella parte inferiore della cartolina è presente la scritta "A BERTIGLIA"</note>
+        </figure>
+      </div>
+    </body>
+  </text>
+
+</TEI>
