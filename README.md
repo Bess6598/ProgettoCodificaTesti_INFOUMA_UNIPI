@@ -20,6 +20,15 @@
     *  ___Esercizio DTD 3 A___: includere all'interno di un documento XML la dichiarazione del tipo, definire internamente gli elementi, gli attributi e validare
     *  ___Esercizio DTD 3 B___: inserire nel prologo del documento XML dell'_esercizio DTD 3 A_ la dichiarazione del tipo di documento e validare
     *  ___Esercizio DTD 3 C___: creare un file esterno con estensione _.dtd_ per il documento dell'_esercizio DTD 3 A_ e includerlo nel prologo XML 
+* __Esercizi TEI:__
+  * ___Esercizio TEI 1___: marcare un testo plain text di circa 3000 caratteri a piacere e
+    * inserire il prologo XML
+    * marcare la struttura usando gli elementi descritti fino a questa lezione, in particolare marcare tutti i paragrafi usando _\<p\>_ e la struttura editoriale usando _\<div\>_  
+    * verificare che sia ben formato con _xmllint_
+  * ___Esercizio TEI 2___: utilizzare puntatori, note, liste, glossa, marcare nomi, riferimenti e termini
+  * ___Esercizio TEI 3___: esercitarsi con varie tipologie di documento
+    * codificare usando gli opportuni elementi TEI un __articolo di rivista__
+    * codificare usando gli opportuni elementi TEI una __cartolina__
 
 [1]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/src/doc-no-well.xml "doc-no-well.xml"
 [2]: https://github.com/angelodel80/corsoCodifica "Repository del corso"
