@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Codifica di una sezione della lettera di Bellini.
+  Filename: sezione_lettera.xml
+  Author: Carolina Sgherri
+  Date: 17/05/2021 -->
+
+<!DOCTYPE TEI SYSTEM "../tei_lite.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <title>Lettera di Bellini a Pepoli</title>
+      </titleStmt>
+
+      <publicationStmt>
+        <distributor>Pastura</distributor>
+        <date when="1959">1959</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>
+          <title>Lettera di Bellini a Pepoli</title>
+          <author>Vincenzo Bellini</author>
+          <date when="26/06/1834">26/06/1834</date>
+        </bibl>
+      </sourceDesc>
+
+    </fileDesc>
+
+  </teiHeader>
+
+  <text>
+    <body>
+      <div>
+        <lb/>
+
+        <p>
+          <date when="26/06">
+            <w xml:lang="en">Jun</w>
+            <num value="26">26</num>
+          </date>
+          <pc>:</pc>
+          <name type="place" xml:lang="fr">
+            <w>Puteaux</w>
+            <w>N</w>
+            <pc>°</pc>
+            <pc>:</pc>
+            <unclear reason="illegible">
+              <num value="19">19</num>
+            </unclear>
+            <w>bis</w>
+            <w>rampe</w>
+            <add place="below" rend="underlined">
+              <w>de</w>
+              <w>Neuilly</w>
+            </add>
+          </name>
+        </p>
+
+        <p>
+          <w>Mio</w>
+          <w>caro</w>
+          <name type="person">
+            <choice>
+              <reg>Carlo</reg>
+              <orig>Carluccio</orig>
+            </choice>
+          </name>
+        </p>
+
+        <p>
+          <w>Avendo</w>
+          <unclear reason="illegible">
+            <w>steso</w>
+          </unclear>
+          <w>l</w>
+          <pc>'</pc>
+          <w>intero</w>
+          <emph>
+            <w>duetto</w>
+          </emph>
+        </p>
+
+      </div>
+    </body>
+  </text>
+
+</TEI>
