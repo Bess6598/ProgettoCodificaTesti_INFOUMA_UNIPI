@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Codifica della lettera di Bellini
+  Filename: lettera.xml
+  Author: Carolina Sgherri
+  Date: 25/05/2021 -->
+
+<!DOCTYPE TEI SYSTEM "../tei_all.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader xml:lang="it">
+    <fileDesc>
+      <titleStmt>
+        <title>Lettera di Bellini a Pepoli</title>
+        <respStmt>
+            <resp>Codifica XML TEI a cura di</resp>
+            <name>Carolina Sgherri</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Pastura</distributor>
+        <date when="1959">1959</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Vincenzo Bellini</author>
+          <publisher>Bellini</publisher>
+          <date when="1834-06-26">26/06/1834</date>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <standOff>
+    <listPerson type="respondents">
+      <person xml:id="PEP">
+        <persName>Carlo Pepoli</persName>
+        <note> Conte poeta, politico e librettista italiano (1796-1881) </note>
+      </person>
+      <person xml:id="BEL">
+        <persName>Vincenzo Bellini</persName>
+        <note>compositore italiano, tra i più celebri operisti dell'Ottocento (1801-1835) </note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="NEU">
+        <location>
+         <region key="FR-ÎL">Île-de-France</region>
+         <country key="FR">France</country>
+        </location>
+      </place>
+      <place xml:id="PAR">
+        <location>
+         <region key="FR-ÎL">Île-de-France</region>
+         <country key="FR">France</country>
+        </location>
+      </place>
+      <place xml:id="PUT">
+        <location>
+         <region key="FR-ÎL">Île-de-France</region>
+         <country key="FR">France</country>
+        </location>
+      </place>
+      <place xml:id="PUT_BIS">
+        <location>
+         <region key="FR-ÎL">Île-de-France</region>
+         <country key="FR">France</country>
+        </location>
+      </place>
+    </listPlace>
+  </standOff>
+
+  <text>
+    <body>
+      <pb facs="#page1" n="1" xml:id="page-1" />
+      <div facs="greenZone" xml:id="greenDiv">
+        <gap quantity="2" unit="chars" reason="illegible"/>
+      </div>
+      <div facs="cyanZone" xml:id="cyanDiv">
+        <p style="transform:rotateZ(-40deg)">
+          <placeName ref="#NEU" xml:lang="fr">
+            NEUILLY-SUR-SEINE
+          </placeName>
+          <lb/>
+          <date when="1834-06-27" xml:lang="en">
+            27 <lb/> July <lb/> 1834
+          </date>
+          <lb/>
+          <gap quantity="4" unit="chars" reason="illegible"/>
+        </p>
+        <p style="transform:rotateZ(-20deg)" xml:lang="fr">
+          à Monsieur <lb/>
+          Monsieur le Comte <persName ref="#PEP">Pepoli</persName> <lb/>
+          n° <num value="1">1</num>: passage des petits Pères <lb/>
+          à <placeName ref="#PAR">Paris</placeName>
+        </p>
+      </div>
+      <div facs="blueZone" xml:id="blueDiv">
+        <p style="writing-mode: vertical-rl text-orientation: sideways-right">
+            <num value="27">27</num>- <lb/>
+            Lettera del <lb/>
+            <persName ref="BEL#">Bellini</persName> sul duetto <lb/>
+            del p°: atto dei Puritani<lb/>
+            <gap quantity="4" unit="chars" reason="illegible"/>
+        </p>
+        <p style="transform:rotateZ(-35deg)">
+          <date when="1834-06-27" xml:lang="en">
+            June <lb/>
+            27 <lb/>
+            1834 <lb/>
+          </date>
+        </p>
+      </div>
+
+      <pb facs="#page2" n="2" xml:id="page-2" />
+      <div facs="redZone" xml:id="redDiv">
+        <p>
+          <date when="26-06" xml:lang="en">
+            Jun 26
+          </date>
+          :
+          <placeName ref="#PUT_BIS" xml:lang="fr">
+            Puteaux N°:
+            <unclear reason="illegible">
+              <num value="19">19</num>
+            </unclear>
+            bis rampe
+            <add place="below" rend="underlined">
+              de Neuilly
+            </add>
+          </placeName>
+        </p>
+      </div>
+      <div facs="orangeZone" xml:id="orangeDiv">
+       <p>
+         Mio caro
+         <persName ref="#PEP">
+           <choice>
+             <reg>Carlo</reg>
+             <orig>Carluccio</orig>
+           </choice>
+         </persName>
+         <lb/>
+         avendo steso l'intero <emph>duetto</emph> <lb/>
+         e mancando in esso qualche cosetta, desidererei che tu <lb/>
+         t'incomodassi a venire a <lb/>
+         <placeName ref="#PUT">Puteaux</placeName> per tutto fissare, e <lb/>
+         nell'istesso tempo darmi la <lb/>
+         sortita di Rubini, se è termi <lb/>
+         nata. T'aspetto in qual giorno <lb/>
+         ed in qual'ora vorrai. <lb/>
+       </p>
+      </div>
+      <div facs="fuchsiaZone" xml:id="fuchsiaDiv">
+        <p>Il tuo <persName ref="#BEL" rend="underlined">Vincenzillo</persName></p>
+      </div>
+    </body>
+  </text>
+
+  <facsimile>
+    <surface xml:id="page1" start="#page-1">
+      <graphic url="./img/page1.jpg" width='1243px' height='1617px' />
+      <zone xml:id="greenZone" start="#greenDiv" points = ' 34,257 35,26 1233,30 1232,259 ' >
+        <figure>
+          <graphic url="./img/zone/green.PNG" />
+          <note>
+            Piccola sezione di un timbro di forma rotonda,
+            che non presenta del testo leggibile
+          </note>
+        </figure>
+      </zone>
+      <zone xml:id="cyanZone" start="#cyanDiv" points = ' 35,260 1229,261 1221,944 27,937 ' >
+        <figure>
+          <graphic url="./img/zone/cyan.PNG" />
+          <note> Timbro grigio circolare al di sopra di quattro righe di testo</note>
+        </figure>
+      </zone>
+      <zone xml:id="blueZone" start="#blueDiv" points = ' 28,948 1219,951 1219,1610 24,1586 ' >
+        <figure>
+          <graphic url="./img/zone/blue.PNG" />
+          <note>
+            Centrali il disegno di un mazzolino di fiori e quello di una foglia,
+            a destra si trova invece del testo ruootato di 90˚ e a sinisra un
+            timbro circolare appicato due volte che riporta una data.
+          </note>
+        </figure>
+      </zone>
+    </surface>
+    <surface xml:id="page2" start="#page-2">
+      <graphic url="./img/page1.jpg" width='1225px' height='1608px' />
+      <zone xml:id="redZone" start="#redDiv" points = ' 1221,195 19,175 19,14 1214,17 ' >
+        <figure>
+          <graphic url="./img/zone/red.PNG" />
+          <note>
+            La data in cui la lettera è stata scritta
+            e il luogo di destinazione della stessa
+          </note>
+        </figure>
+      </zone>
+      <zone xml:id="orangeZone" start="#orangeDiv" points = ' 1199,1537 98,1554 110,340 1190,325 ' >
+        <figure>
+          <graphic url="./img/zone/orange.PNG" />
+          <note>
+            Il corpo della lettera
+          </note>
+        </figure>
+      </zone>
+      <zone xml:id="fuchsiaZone" start="#fuchsiaDiv" points = ' 675,1519 1153,1511 1153,1511 1156,1579 667,1590 ' >
+        <figure>
+          <graphic url="./img/zone/fuchsia.PNG" />
+          <note> La firma del mittente della lettera </note>
+        </figure>
+      </zone>
+    </surface>
+  </facsimile>
+
+</TEI>

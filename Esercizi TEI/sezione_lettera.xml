@@ -4,7 +4,7 @@
   Author: Carolina Sgherri
   Date: 17/05/2021 -->
 
-<!DOCTYPE TEI SYSTEM "../tei_lite.dtd">
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
 
 <TEI xmlns="http://www.teic.org/ns/1.0">
 
@@ -25,7 +25,7 @@
         <bibl>
           <title>Lettera di Bellini a Pepoli</title>
           <author>Vincenzo Bellini</author>
-          <date when="26/06/1834">26/06/1834</date>
+          <date when="26-06-1834">26/06/1834</date>
         </bibl>
       </sourceDesc>
 
@@ -39,7 +39,7 @@
         <lb/>
 
         <p>
-          <date when="26/06">
+          <date when="06-26">
             <w xml:lang="en">Jun</w>
             <num value="26">26</num>
           </date>
