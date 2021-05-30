@@ -1,5 +1,5 @@
 # Codifica di testi
-##### Esercizi corso di Codifica di testi, Informatica Umanistica, Università di Pisa, Anno accademico 2020/2021
+##### Esercizi e progetto del corso di Codifica di testi, Informatica Umanistica, Università di Pisa, Anno accademico 2020/2021
 
 ### Esercizi
 * __Esercizio prologo:__ creare un file _.xml_ e inserire un prologo con la dichiarazione XML e un commento con le nostre informazioni
@@ -7,7 +7,7 @@
 * __Esercizio correzione:__ aprire il [file XML][1] non ben formattato presente nella [repository del corso][2]:
   * validarlo con un parser XML
   * correggerlo (commentando)
-  * aggiungere un figlio (child) a un elmento
+  * aggiungere un figlio (child) a un elemento
   * aggiungere un fratello (sibling) a un elemento
 * __Esercizio CDDATA:__ inserire all'interno di un tag un frammento di codice HTML
 * __Esercizi DTD:__
@@ -31,9 +31,11 @@
     * codificare usando gli opportuni elementi TEI una [__cartolina__][4]
   * ___Esercizio TEI 4___: codificare la parte di lettera di Bellini contenuta nella slide 46 della [presentazione "Tei editorial"][5] del [corso di codifica][2]
   * ___Esercizio TEI 5___: codificare la lettera di Bellini contenuta nella slide 94 della [presentazione "Tei editorial"][5] del [corso di codifica][2]
+* __Esercizio template XSL:__ modificare opportunamente il file [_template.xsl_][6] aggiungendo variabili, parametri e call template 
 
 [1]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/src/doc-no-well.xml "doc-no-well.xml"
 [2]: https://github.com/angelodel80/corsoCodifica "Repository del corso"
 [3]: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037552
 [4]: https://github.com/angelodel80/corsoCodifica/blob/master/progetto-esame/ProgettoCartoline/Scan_Cartoline_jpg/7694-100F.jpg
 [5]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/slides/CdT_20_21_lez7-8_TEI_editorial.pdf
+[6]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/src/template.xsl
