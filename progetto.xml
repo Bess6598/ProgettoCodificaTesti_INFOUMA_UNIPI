@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Codifica dei due pagine del manoscritto Ms. fr. 3951/1 di Ferdinand de Saussure
+  Filename: progetto.xml
+  Author: Carolina Sgherri
+  Date: 15/06/2021 -->
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+
+  <teiHeader xml:lang="it">
+    <fileDesc>
+      <titleStmt>
+        <title>Prolusioni all'università di Ginevra - pagine 15-16</title>
+        <respStmt>
+          <resp>Codifica XML TEI a cura di</resp>
+          <name>Carolina Sgherri</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Bibliothèque de Genève</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note>  </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, novembre 1891)</title>
+          <author ref="#SAU">Ferdinand de Saussure</author>
+          <date when="1891-11">novembre 1891</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <idno>BGE Ms. fr. 3951/1.15-16</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>
+              Appunti per le prime conferenze all'Università di Ginevra, in parte
+              utilizzati per le prime lezioni del corso di Phonètique du grec et
+              du latin 1981. Probabilmente destinati alla pubblicazione di una brouchure.
+            </summary>
+            <textLang>Francese</textLang>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <objectType>Appunti</objectType>
+                  <material>Carta</material>
+                  <dimensions unit="cm">
+                    <height>9</height>
+                    <width>14</width>
+                  </dimensions>
+                </support>
+                <condition>
+                  <p>
+                    Manoscritto conservato in discrete condizioni, perfettamente
+                    leggibile in tutte le componenti.
+                  </p>
+                </condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">
+                  <p>Scrritto in un unica colonna.</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <standOff xml:lang="it">
+    <listPerson type="respondents">
+      <person xml:id="SAU">
+        <persName>
+          <forename>Ferdinand</forename>
+          <surname>de Saussure</surname>
+        </persName>
+        <birth when="1913-02-22"/>
+        <sex>M</sex>
+        <note>
+          Linguista e semiologo svizzero, considerato uno dei fondatori della
+          linguistica moderna, in particolare dello strutturalismo.
+        </note>
+      </person>
+      <person xml:id="CAR">
+        <persName>
+          <forename>Carlo I</forename>
+          <roleName>Magno</roleName>
+        </persName>
+        <birth when="743-04-02"/>
+        <sex>M</sex>
+        <note>
+          Fu re dei Franchi dal 768, re dei Longobardi e primo
+          Imperatore dei Romani.
+          L'appellativo Magno gli fu attribuito dal suo biografo Eginardo.
+        </note>
+      </person>
+    </listPerson>
+    <listPlace>
+      <place xml:id="GAL">
+        <location>
+        <country key="FR"/>
+        <settlement type="region">Gallia</settlement>
+        </location>
+      </place>
+      <place xml:id="FRA">
+        <location>
+        <country key="FR"/>
+        <settlement type="country">Francia</settlement>
+        </location>
+        </place>
+    </listPlace>
+    <listObject>
+      <object xml:id="FAC_LET">
+        <objectIdentifier>
+          <objectName>Facoltà di lettere</objectName>
+          <institution>Facoltà di lettere</institution>
+        </objectIdentifier>
+      </object>
+    </listObject>
+  </standOff>
+
+  <text>
+    <body>
+      <pb facs="#page15" n="15" xml:id="page-15" />
+      <div facs="A_15_zone" xml:id="A_15_div">
+        <ab>
+          <num value="15">15</num>
+        </ab>
+      </div>
+      <div type="text" facs="B_15_zone" xml:id="B_15_div" xml:lang="fr">
+        <p>
+          <seg xml:id="B_15_div_1_fr">
+            C’est de cette qualité de <term>science historique</term>
+            que se réclamera toute espèce d’études linguistiques pour
+            figurer dans une <objectName ref="FAC_LET">Faculté des Lettres</objectName>
+          </seg>
+          <seg xml:id="B_15_div_2_fr">
+            Comme c’est particulièrement aussi sur cette idée d’histoire qu’il est
+            insisté dans le titre de ce cours – alors que d’autres dénominations
+            comme <term>Grammaire comparée</term>
+            sont plus usitées – je crois  devoir essayer de faire le commentaire,
+            nécessairement très abrégé et incomplet, du sens qu’a ce mot
+            <term>histoire</term> pour le linguiste.
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="B_15_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="B_15_div_1_it">
+            È a tale qualità di scienza storica che farà riferimento ogni
+            specie di studio linguistico per figurare in una Facoltà di Lettere.
+          </seg>
+          <seg xml:id="B_15_div_2_it">
+            Giacché è su quest’idea di storia che s’insiste particolarmente
+            nell’intitolazione di questo corso – sebbene altre denominazioni,
+            come Grammatica comparata, siano più usate – credo di dover provare
+            a fare un commento, necessariamente molto risicato e incompleto,
+            sul senso che ha questa parola, ‘storia’, per il linguista.
+          </seg>
+        </p>
+      </div>
+      <div type="text" facs="C_15_zone" xml:id="C_15_div" xml:lang="fr">
+        <ab>
+          <gap atLeast="5" atMost="6" unit="chars" reason="illegible"/>
+          <unclear reason="illegible"> un man. de </unclear>
+          <gap atLeast="5" atMost="8" unit="chars" reason="illegible"/>
+        </ab>
+      </div>
+      <div type="text" facs="D_15_zone" xml:id="D_15_div" xml:lang="fr">
+        <p>
+          <seg xml:id="D_15_div_1_fr">
+            C’est sur ce sujet que j’aurais voulu solliciter votre attention
+            presque sans autre préambule, car il contient tout : plus on étudie
+            la <term>langue</term>, plus on arrive à se pénétrer de
+            ce fait que tout dans la <term>langue</term> est
+            <term>histoire</term>, c’est-à-dire qu’elle est un
+            <term>objet d’analyse historique</term>, et non
+            d’<term>analyse abstraite</term>, qu’elle se compose
+            de <term>faits</term>, et non de <term>lois</term>
+            , que tout ce qui semble <term>organique</term> dans le
+            <term>langage</term> est en réalité contingent et
+            complètement <term>accidentel</term>.
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="D_15_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="D_15_div_1_it">
+            È su questo argomento che avrei voluto sollecitare la vostra
+            attenzione, senza quasi altro preambolo, perché esso
+            ricomprende tutto: più si studia la lingua, più si arriva a
+            prendere coscienza del fatto che tutto nella lingua è storia,
+            cioè che essa è un oggetto di analisi storica, e non di analisi
+            astratta, che si compone di fatti, e non di leggi, che
+            tutto ciò che sembra organico nel linguaggio è in realtà
+            contingente e completamente accidentale.
+          </seg>
+        </p>
+      </div>
+      <div type="text" facs="E_15_zone" xml:id="E_15_div" xml:lang="fr">
+        <p>
+          <seg xml:id="E_15_div_1_fr">
+            Il y a une première manière un peu superficielle  d'entendre que la
+            <term>linguistique</term> est une <term>science historique</term>
+            , c'est celle qui consiste à observer
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="E_15_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="E_15_div_1_it">
+            C’è un primo modo, un po’ superficiale, d’intendere l’idea che
+            la linguistica sia una scienza storica, ed è quello che
+            consiste nell’osservare
+          </seg>
+        </p>
+      </div>
+      <pb facs="#page16" n="16" xml:id="page-16" />
+      <div facs="A_16_zone" xml:id="A_16_div">
+        <ab>
+          <num value="16">16</num>.
+        </ab>
+      </div>
+      <div type="text" facs="B_16_zone" xml:id="B_16_div" xml:lang="fr">
+        <p>
+          <seg xml:id="B_16_div_1_fr">
+            qu'on ne connaît pas complètement un peuple sans connaître sa
+            <term>langue</term> ou en avoir une idée ; que la <term>langue</term>
+             est une partie importante du bagage des nations et contribue à
+             caractériser une <term>époque</term>, une société.
+          </seg>
+          <seg xml:id="B_16_div_2_fr">
+            La présence d'<term>idiomes</term> celtiques en
+            <placeName ref="#GAL">Gaule</placeName>,
+            et leur disparition lente sous l'influence de la
+            <date from="58" to="51" >domination romaine</date> constituent par
+            exemple de grands <term>faits</term> historiques.
+          </seg>
+          <seg xml:id="B_16_div_3_fr">
+            C'est là le <term>point de vue</term> de la <term>Langue</term> dans
+            l'<term>Histoire</term>, mais ce n'est pas <term>le point de vue</term>
+            de l'<term>histoire de la langue</term>.
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="B_16_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="B16_div_1_fr">
+            che non si conosce completamente un popolo senza conoscerne la
+            lingua, o almeno averne un’idea; che la lingua è una parte
+            importante del bagaglio delle nazioni e contribuisce a
+            caratterizzare un’epoca, una società.
+          </seg>
+          <seg xml:id="B16_div_2_fr">
+            La presenza di idiomi celtici in Gallia, e la loro lenta sparizione
+            sotto l’influenza della dominazione romana costituiscono,
+            per esempio, grandi fatti storici.
+          </seg>
+          <seg xml:id="B16_div_3_fr">
+            Quello è il punto di vista della Lingua nella Storia, ma non è
+            il punto di vista della Storia della lingua.
+          </seg>
+        </p>
+      </div>
+      <div type="text" facs="C_16_zone" xml:id="C_16_div" xml:lang="fr">
+        <p>
+          <seg xml:id="C_16_div_1_fr">
+            Il est évident que par mille <term>faits</term>
+            la <term>langue</term> intéressera l'<term>historien</term>
+            ; j'ajoute même que l'<term>historien</term> ne s'y intéresse
+            peut-être pas toujours assez.
+          </seg>
+          <seg xml:id="C_16_div_2_fr">
+            Il y a très peu de personnes en
+            <placeName ref="FRA">France</placeName> qui
+            songent par exemple à se demander quelle
+            <term>langue</term> on parlait à
+            <date from="25-12-800" to="28-01-814">la cour de
+            <persName>Charlemagne</persName> </date> - était-ce
+            du roman ou de l'allemand - et, si c'était l'allemand, était-ce un
+            <term>dialecte</term> disparu ou l'un des
+            <term>dialectes</term> qui se perpétuent aujourd'hui ?
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="C_16_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="C_16_div_1_it">
+            È evidente che per mille fatti la lingua interesserà lo storico;
+            e aggiungo pure che forse lo storico non se ne interessa sempre
+            quanto dovrebbe.
+          </seg>
+          <seg xml:id="C_16_div_2_it">
+            Ci sono pochissime persone in Francia, che badino, per esempio,
+            a chiedersi quale lingua si parlasse alla corte di Carlo
+            Magno – se fosse romanzo o germanico – e, se fosse germanico,
+            se era un dialetto sparito o uno dei dialetti che si perpetuano
+            ancora oggi?
+          </seg>
+        </p>
+      </div>
+      <div type="text" facs="D_16_zone" xml:id="D_16_div" xml:lang="fr">
+        <p>
+          <seg xml:id="D_16_div_1_fr">
+            Il y a très peu d'<term>historiens</term> qui
+            remarquent que les noms des chefs Huns, comme
+            <term>Attila</term>, ne sont pas des noms Huns, mais des
+            noms germaniques, - ce qui est la preuve de tout
+            un <term>état de choses</term> fort intéressant ;
+          </seg>
+          <seg xml:id="D_16_div_2_fr">
+            et en second lieu que ces noms germaniques ne sont pas du premier
+            <term>dialecte</term> venu, ne sont pas saxons ou Scandinaves,
+            mais sont clairement gothiques.
+          </seg>
+          <seg xml:id="D_16_div_3_fr">
+            Mais tous ces <term>faits</term>, grands ou petits,
+          </seg>
+        </p>
+      </div>
+      <div type="translation" xml:id="D_16_div_IT" xml:lang="it">
+        <p>
+          <seg xml:id="D_16_div_1_it">
+            Ci sono pochissimi storici che notino che i nomi dei capi Unni, come
+            Attila, non sono nomi unni, ma germanici, – il che è la prova di
+            tutto uno stato di cose parecchio interessante;
+          </seg>
+          <seg xml:id="D_16_div_2_it">
+            e in secondo luogo che questi nomi germanici non sono del primo
+            dialetto, non sono sassoni o scandinavi, ma sono chiaramente gotici.
+          </seg>
+          <seg xml:id="D_16_div_3_it">
+            Ma tutti questi fatti, grandi o piccoli,
+          </seg>
+        </p>
+      </div>
+    </body>
+    <linkGrp type="translation" domains="#B_15_div #B_15_div_IT">
+      <link target="#B_15_div_1_fr #B_15_div_1_it"/>
+      <link target="#B_15_div_2_fr #B_15_div_2_it"/>
+    </linkGrp>
+    <linkGrp type="translation" domains="#D_15_div #D_15_div_IT">
+      <link target="#D_15_div_1_fr #D_15_div_1_it"/>
+    </linkGrp>
+    <linkGrp type="translation" domains="#E_15_div #E_15_div_IT">
+      <link target="#E_15_div_1_fr #E_15_div_1_it"/>
+    </linkGrp>
+    <link type="join" target="#E_15_div_1_fr #B_16_div_1_fr"/>
+    <link type="join" target="#E_15_div_1_it #B_16_div_1_it"/>
+    <linkGrp type="translation" domains="#B_16_div #B_16_div_IT">
+      <link target="#B_16_div_1_fr #B_16_div_1_it"/>
+      <link target="#B_16_div_2_fr #B_16_div_2_it"/>
+      <link target="#B_16_div_3_fr #B_16_div_3_it"/>
+    </linkGrp>
+    <linkGrp type="translation" domains="#C_16_div #C_16_div_IT">
+      <link target="#C_16_div_1_fr #C_16_div_1_it"/>
+      <link target="#C_16_div_2_fr #C_16_div_2_it"/>
+    </linkGrp>
+    <linkGrp type="translation" domains="#D_16_div #C_16_div_IT">
+      <link target="#D_16_div_1_fr #D_16_div_1_it"/>
+      <link target="#D_16_div_2_fr #D_16_div_2_it"/>
+      <link target="#E_16_div_2_fr #E_16_div_2_it"/>
+    </linkGrp>
+  </text>
+
+
+  <facsimile xml:lang="it">
+    <surface xml:id="page15" start="#page-15">
+      <graphic url="./img/fr_03951_01_p15.jpg" width='3378.33334px' height='4164.33334px' />
+      <zone xml:id="A_15_zone" start="#A_15_div" points = ' 307,516 297,233 670,226 627,523 ' >
+        <figure>
+          <graphic url="./img/zone/A_15.PNG" />
+          <head>Pagina 15</head>
+          <figDesc>
+            Il numero 15 all'interno di un cerchio a simboleggiare
+            l'inizio della pagina 15.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="B_15_zone" start="#B_15_div" points = ' 790,2113 2124,2053 2120,1939 3044,1869 3047,333 750,349 ' >
+        <figure>
+          <graphic url="./img/zone/B_15.PNG" />
+          <head>Sezione di testo 1</head>
+          <figDesc>
+            Testo francese, scritto a mano, composto di 11 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate,
+            altre sottolineate e una in particolare completamente illegibile a
+            causa di una riscrittura.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="C_15_zone" start="#C_15_div" points = ' 300,1719 790,1686 777,2026 304,2046 ' >
+        <figure>
+          <graphic url="./img/zone/C_15.PNG" />
+          <head>Appunto a lato</head>
+          <figDesc>
+            Appunto di testo scritto a mano e barrato.
+            L'appunto si trova a sinistra del testo ed è delineato a destra
+            da un semicerchio.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="D_15_zone" start="#D_15_div" points =  ' 344,3473 3077,3326 3044,1886 2120,1949 2114,2053 330,2173 ' >
+        <figure>
+          <graphic url="./img/zone/D_15.PNG" />
+          <head>Sezione di testo 2</head>
+          <figDesc>
+            Testo francese scritto a mano, composto di 10 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate
+            e altre sottolineate.
+            Le righe 7 e 8 sporgono a sinistra rispetto al resto del testo a
+            causa di alcune correzioni.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="E_15_zone" start="#E_15_div" points =  ' 3074,3333 3087,3736 787,3879 810,3443 ' >
+        <figure>
+          <graphic url="./img/zone/E_15.PNG" />
+          <head>Sezione di testo 3</head>
+          <figDesc>
+            Testo francese scritto a mano, composto di 3 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate.
+          </figDesc>
+        </figure>
+      </zone>
+    </surface>
+    <surface xml:id="page16" start="#page-16">
+      <graphic url="./img/fr_03951_01_p16.jpg" width='3354px' height='4182px' />
+      <zone xml:id="A_16_zone" start="#A_16_div" points = ' 296,213 642,218 649,457 299,454 ' >
+        <figure>
+          <graphic url="./img/zone/A_16.PNG" />
+          <head>Pagina 16</head>
+          <figDesc>
+            Il numero 16, seguito da un punto, all'interno di un ovale a
+            simboleggiare l'inizio della pagina 16.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="B_16_zone" start="#B_16_div" points = ' 2994,1806 3024,356 650,353 690,1866 ' >
+        <figure>
+          <graphic url="./img/zone/B_16.PNG" />
+          <head>Sezione di testo 1</head>
+          <figDesc>
+            Testo francese scritto a mano, composto di 11 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate
+            e altre sottolineate.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="C_16_zone" start="#C_16_div" points = ' 1987,2973 1997,2873 2997,2836 3007,1840 700,1896 784,3046 ' >
+        <figure>
+          <graphic url="./img/zone/C_16.PNG" />
+          <head>Sezione di testo 2</head>
+          <figDesc>
+            Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate
+            e altre sottolineate.
+            Le riga 4 presenta un correzione composta di due parole che si trova
+            nello spazio fra la riga 3 e la 4 stessa.
+          </figDesc>
+        </figure>
+      </zone>
+      <zone xml:id="D_16_zone" start="#D_16_div" points = ' 3007,2843 3010,3876 250,3880 244,3073 2020,2980 2014,2866 ' >
+      <figure>
+          <graphic url="./img/zone/D_16.PNG" />
+          <head>Sezione di testo 3</head>
+          <figDesc>
+            Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
+            Questa porzione di scritto presenta alcune sezioni di testo barrate
+            e altre sottolineate.
+            Le riga 8 sporge a sinistra rispetto al resto del testo
+            e la riga 9 è composta di solamente due parole e un segno di
+            interpunzione che si trovano a destra del foglio.
+          </figDesc>
+        </figure>
+      </zone>
+    </surface>
+  </facsimile>
+
+</TEI>
