@@ -19,7 +19,7 @@
       <html>
         <head>
           <title>
-            <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/title" />
+            <xsl:value-of select="teiCorpus/teiHeader/fileDesc/titleStmt/title" />
           </title>
           <xsl:copy-of select="$stile" />
         </head>

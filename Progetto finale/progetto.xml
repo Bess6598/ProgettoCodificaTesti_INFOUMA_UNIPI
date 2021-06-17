@@ -1,31 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!-- Codifica dei due pagine del manoscritto Ms. fr. 3951/1 di Ferdinand de Saussure
-  Filename: progetto.xml
-  Author: Carolina Sgherri
-  Date: 15/06/2021 -->
-
-<!DOCTYPE TEI SYSTEM "tei_all.dtd">
-
-<TEI xmlns="http://www.teic.org/ns/1.0">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<TEI>
   <teiHeader xml:lang="it">
     <fileDesc>
       <titleStmt>
         <title>Prolusioni all'università di Ginevra - pagine 15-16</title>
         <respStmt>
-          <resp>Codifica XML TEI a cura di</resp>
+          <resp>Codifica XML TEI a cura di </resp>
           <name>Carolina Sgherri</name>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <distributor>Bibliothèque de Genève</distributor>
       </publicationStmt>
-      <notesStmt>
-        <note>  </note>
-      </notesStmt>
       <sourceDesc>
         <bibl>
-          <title xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, novembre 1891)</title>
+          <title xml:lang="fr">
+            Trois premières conférences à l'Université
+            (cours d'ouverture, novembre 1891)
+          </title>
           <author ref="#SAU">Ferdinand de Saussure</author>
           <date when="1891-11">novembre 1891</date>
         </bibl>
@@ -35,9 +29,10 @@
           </msIdentifier>
           <msContents>
             <summary>
-              Appunti per le prime conferenze all'Università di Ginevra, in parte
-              utilizzati per le prime lezioni del corso di Phonètique du grec et
-              du latin 1981. Probabilmente destinati alla pubblicazione di una brouchure.
+              Appunti per le prime conferenze all'Università di Ginevra,
+              in parte utilizzati per le prime lezioni del corso di
+              Phonètique du grec et du latin 1981. Probabilmente destinati
+              alla pubblicazione di una brouchure.
             </summary>
             <textLang>Francese</textLang>
           </msContents>
@@ -54,8 +49,8 @@
                 </support>
                 <condition>
                   <p>
-                    Manoscritto conservato in discrete condizioni, perfettamente
-                    leggibile in tutte le componenti.
+                    Manoscritto conservato in discrete condizioni,
+                    perfettamente leggibile in tutte le componenti.
                   </p>
                 </condition>
               </supportDesc>
@@ -70,27 +65,32 @@
       </sourceDesc>
     </fileDesc>
   </teiHeader>
-
   <standOff xml:lang="it">
     <listPerson type="respondents">
       <person xml:id="SAU">
         <persName>
-          <forename>Ferdinand</forename>
+          <forename>Ferdinand </forename>
           <surname>de Saussure</surname>
         </persName>
-        <birth when="1913-02-22"/>
+        <birth when="1857-11-26"/>
+        <death when="1913-02-22"/>
         <sex>M</sex>
         <note>
           Linguista e semiologo svizzero, considerato uno dei fondatori della
-          linguistica moderna, in particolare dello strutturalismo.
+          linguistica moderna.
+          Insegnò all'università di Parigi e a quella di Ginevra.
+          Nella sua opera postuma <seg xml:lang="fr">"Cours de linguistique
+          générale"</seg> sono poste le basi della moderna scienza linguistica,
+          in particolare di quella branca conosciuta con il nome di strutturalismo.
         </note>
       </person>
       <person xml:id="CAR">
         <persName>
-          <forename>Carlo I</forename>
+          <forename>Carlo I </forename>
           <roleName>Magno</roleName>
         </persName>
         <birth when="743-04-02"/>
+        <death when="814-01-28"/>
         <sex>M</sex>
         <note>
           Fu re dei Franchi dal 768, re dei Longobardi e primo
@@ -98,31 +98,62 @@
           L'appellativo Magno gli fu attribuito dal suo biografo Eginardo.
         </note>
       </person>
+      <person xml:id="ATT">
+        <persName>
+          <forename>Attila </forename>
+          <roleName>flagello di Dio</roleName>
+        </persName>
+        <birth when="406"/>
+        <death when="453"/>
+        <sex>M</sex>
+        <note>
+          Fu un condottiero e sovrano unno dal 434 fino alla morte.
+          Durante il suo regno divenne il più irriducibile nemico
+          dell'Impero Romano.
+          Nonostante il suo impero si fosse disgregato alla sua morte,
+          è diventato una figura leggendaria nella storia europea.
+        </note>
+      </person>
     </listPerson>
     <listPlace>
       <place xml:id="GAL">
+        <placeName notAfter="451">Gallia</placeName>
         <location>
-        <country key="FR"/>
-        <settlement type="region">Gallia</settlement>
+          <country key="FR"/>
+          <bloc>EU</bloc>
         </location>
+        <note>
+          La terra dei Galli, termine che identificava, nel lessico latino,
+          un ampio insieme di popolazioni celtiche continentali.
+        </note>
       </place>
       <place xml:id="FRA">
+        <placeName>Francia</placeName>
         <location>
-        <country key="FR"/>
-        <settlement type="country">Francia</settlement>
+          <country key="FR"/>
+          <bloc>EU</bloc>
         </location>
-        </place>
+        <note>
+          Uno stato principalmente situato nell'Europa occidentale, ma che
+          possiede ugualmente territori disseminati su più oceani e altri
+          continenti.
+        </note>
+      </place>
     </listPlace>
     <listObject>
-      <object xml:id="FAC_LET">
+      <object xml:id="FAC_LET" type="institution">
         <objectIdentifier>
           <objectName>Facoltà di lettere</objectName>
           <institution>Facoltà di lettere</institution>
         </objectIdentifier>
+        <p>
+          Struttura organizzativa di discipline accademiche, che studiano
+          l'uomo e la condizione umana, utilizzando principalmente strumenti
+          analitici, critici oppure speculativi,
+        </p>
       </object>
     </listObject>
   </standOff>
-
   <text>
     <body>
       <pb facs="#page15" n="15" xml:id="page-15" />
@@ -134,16 +165,38 @@
       <div type="text" facs="B_15_zone" xml:id="B_15_div" xml:lang="fr">
         <p>
           <seg xml:id="B_15_div_1_fr">
-            C’est de cette qualité de <term>science historique</term>
-            que se réclamera toute espèce d’études linguistiques pour
-            figurer dans une <objectName ref="FAC_LET">Faculté des Lettres</objectName>
+            C’est de cette qualité de <term>science historique</term><lb/>
+            que se réclamera
+            <choice>
+              <abbr>tte</abbr>
+              <expan>toute</expan>
+            </choice>
+            espèce d’études<lb/>linguistiques pour figurer
+            <choice>
+              <abbr>d ,</abbr>
+              <expan>dans une</expan>
+            </choice>
+            <objectName ref="FAC_LET">Faculté des<lb/>Lettres.</objectName>
           </seg>
           <seg xml:id="B_15_div_2_fr">
-            Comme c’est particulièrement aussi sur cette idée d’histoire qu’il est
-            insisté dans le titre de ce cours – alors que d’autres dénominations
-            comme <term>Grammaire comparée</term>
-            sont plus usitées – je crois  devoir essayer de faire le commentaire,
-            nécessairement très abrégé et incomplet, du sens qu’a ce mot
+            Comme c’est particulièrement aussi<lb/>sur cette idée d’histoire
+            <del rend="line-through">qué insis</del> qu’il<lb/>est insisté
+            <choice>
+              <abbr>d</abbr>
+              <expan>dans</expan>
+            </choice>
+            le titre de ce cours – alors<lb/>que d’autres dénominations
+            <w rend="overline">comme</w>
+            <term rend="underline">
+              <choice>
+                <abbr>gr.</abbr>
+                <expan>Grammaire</expan>
+              </choice>
+              comparée<lb/>
+            </term>
+            sont plus usitées – je crois devoir essayer<lb/>de faire
+            <del rend="line-through">un</del> le commentaire, nécessairement
+            <lb/>très abrégé et incomplet, du sens qu’a ce<lb/>mot
             <term>histoire</term> pour le linguiste.
           </seg>
         </p>
@@ -152,7 +205,8 @@
         <p>
           <seg xml:id="B_15_div_1_it">
             È a tale qualità di scienza storica che farà riferimento ogni
-            specie di studio linguistico per figurare in una Facoltà di Lettere.
+            specie di studio linguistico per figurare in una
+            <objectName ref="FAC_LET">Facoltà di Lettere</objectName>.
           </seg>
           <seg xml:id="B_15_div_2_it">
             Giacché è su quest’idea di storia che s’insiste particolarmente
@@ -166,24 +220,56 @@
       <div type="text" facs="C_15_zone" xml:id="C_15_div" xml:lang="fr">
         <ab>
           <gap atLeast="5" atMost="6" unit="chars" reason="illegible"/>
-          <unclear reason="illegible"> un man. de </unclear>
+          <unclear reason="illegible"> un<lb/>man. de</unclear><lb/>
           <gap atLeast="5" atMost="8" unit="chars" reason="illegible"/>
         </ab>
       </div>
       <div type="text" facs="D_15_zone" xml:id="D_15_div" xml:lang="fr">
         <p>
           <seg xml:id="D_15_div_1_fr">
-            C’est sur ce sujet que j’aurais voulu solliciter votre attention
-            presque sans autre préambule, car il contient tout : plus on étudie
-            la <term>langue</term>, plus on arrive à se pénétrer de
-            ce fait que tout dans la <term>langue</term> est
-            <term>histoire</term>, c’est-à-dire qu’elle est un
-            <term>objet d’analyse historique</term>, et non
+            C’est sur ce sujet<lb/>que j’aurais voulu solliciter votre attention
+            presque<lb/>
+            <choice>
+              <abbr><unclear reason="illegible">sl</unclear></abbr>
+              <expan>sans</expan>
+            </choice>
+            autre préambule, car il contient tout : plus<lb/>on étudie
+            la <term>langue</term>, plus on arrive à
+            <del rend="line-through">
+              <unclear reason="illegible"> mieux </unclear>
+            </del> se<lb/>pénétrer
+            <del rend="line-through">
+              <gap atLeast="4" atMost="6" unit="chars" reason="illegible" />
+            </del> de ce fait que
+            <w rend="underline">tout</w> dans la
+            <term>langue</term><lb/> est <term rend="underline">histoire</term>,
+            <choice>
+              <abbr>c.à.d.</abbr>
+              <expan>c’est-à-dire</expan>
+            </choice> qu’elle est un
+            <term>objet</term>
+            <del rend="line-through">
+              <unclear reason="illegible">de cerisi-</unclear>
+            </del>
+            <lb/> <term>d’analyse</term>
+            <del rend="line-through">: dèration</del>
+            <term>historique</term>, et non
+            <del rend="line-through">de consideration</del> <lb/>
             d’<term>analyse abstraite</term>, qu’elle se compose
-            de <term>faits</term>, et non de <term>lois</term>
-            , que tout ce qui semble <term>organique</term> dans le
-            <term>langage</term> est en réalité contingent et
-            complètement <term>accidentel</term>.
+            de <term rend="underline">faits</term>, et non de <lb/>
+            <term rend="underline">lois</term>, que
+            <choice>
+              <abbr>tt</abbr>
+              <expan>tout</expan>
+            </choice> ce qui semble
+            <term rend="underline">organique</term>
+            <choice>
+              <abbr>d</abbr>
+              <expan>dans</expan>
+            </choice> le
+            <term>langage</term><lb/> est en réalité
+            <w rend="underlined">contingent</w> et
+            complètement <term>accidentel</term>.<lb/>
           </seg>
         </p>
       </div>
@@ -204,9 +290,27 @@
       <div type="text" facs="E_15_zone" xml:id="E_15_div" xml:lang="fr">
         <p>
           <seg xml:id="E_15_div_1_fr">
-            Il y a une première manière un peu superficielle  d'entendre que la
-            <term>linguistique</term> est une <term>science historique</term>
-            , c'est celle qui consiste à observer
+            Il y a une
+            <num type="ordinal" value="1">1°</num>
+            manière un peu superficielle<lb/>d'entendre que la
+            <del rend="line-through">scien</del>
+            <term>
+              <choice>
+                <abbr>linguisti.</abbr>
+                <expan>linguistique</expan>
+              </choice>
+            </term> est
+            <choice>
+              <abbr>I</abbr>
+              <expan>une</expan>
+            </choice>
+            <term>science his-<lb/>:torique</term>,
+            c'est celle qui consiste à observer
+            <del rend="line-through">
+              <unclear reason="illegible">
+                puélla
+              </unclear>
+            </del><lb/>
           </seg>
         </p>
       </div>
@@ -230,20 +334,37 @@
           <seg xml:id="B_16_div_1_fr">
             qu'on ne connaît pas complètement un peuple sans connaître sa
             <term>langue</term> ou en avoir une idée ; que la <term>langue</term>
-             est une partie importante du bagage des nations et contribue à
-             caractériser une <term>époque</term>, une société.
+             est une partie
+             <choice>
+               <sic>importte</sic>
+               <corr>importante</corr>
+             </choice> du bagage des nations et contribue à
+             caractériser une <term rend="undeline">époque</term>,
+             une <w rend="underline">société</w>.
+          </seg>
+          <seg>
+            <del rend="line-through">
+              L'histoire ne peut s'interesse a c'est
+            </del>
           </seg>
           <seg xml:id="B_16_div_2_fr">
             La présence d'<term>idiomes</term> celtiques en
             <placeName ref="#GAL">Gaule</placeName>,
             et leur disparition lente sous l'influence de la
-            <date from="58" to="51" >domination romaine</date> constituent par
-            exemple de grands <term>faits</term> historiques.
+            <date from="58" to="51" >domination romaine</date>
+            <del rend="line-through">en</del>constituent
+            <choice>
+              <abbr>p. ex. </abbr>
+              <expan>par exemple </expan>
+            </choice>
+            de grands <term rend="undeline">faits historiques</term>.
           </seg>
           <seg xml:id="B_16_div_3_fr">
-            C'est là le <term>point de vue</term> de la <term>Langue</term> dans
-            l'<term>Histoire</term>, mais ce n'est pas <term>le point de vue</term>
-            de l'<term>histoire de la langue</term>.
+            C'est là le <term>point de vue</term> de la ù
+            <term rend="undeline">Langue</term> <w rend="undeline">dans</w>
+            l'<term rend="undeline">Histoire</term>, mais ce n'est
+            pas <term>le point de vue</term> de
+            l'<term rend="undeline">histoire de la langue</term>.
           </seg>
         </p>
       </div>
@@ -256,9 +377,10 @@
             caratterizzare un’epoca, una società.
           </seg>
           <seg xml:id="B16_div_2_fr">
-            La presenza di idiomi celtici in Gallia, e la loro lenta sparizione
-            sotto l’influenza della dominazione romana costituiscono,
-            per esempio, grandi fatti storici.
+            La presenza di idiomi celtici in
+            <placeName ref="#GAL">Gallia</placeName>, e la loro lenta sparizione
+            sotto l’influenza della <date from="58" to="51" >dominazione romana</date>
+            costituiscono, per esempio, grandi fatti storici.
           </seg>
           <seg xml:id="B16_div_3_fr">
             Quello è il punto di vista della Lingua nella Storia, ma non è
@@ -270,20 +392,41 @@
         <p>
           <seg xml:id="C_16_div_1_fr">
             Il est évident que par mille <term>faits</term>
-            la <term>langue</term> intéressera l'<term>historien</term>
-            ; j'ajoute même que l'<term>historien</term> ne s'y intéresse
-            peut-être pas toujours assez.
+            la <term>langue</term> in=<lb/>:téressera l'<term>historien</term>
+            ; j'ajoute même que l'<term>historie-<lb/>=n</term> ne s'y intéresse
+            <choice>
+              <abbr>pt. être </abbr>
+              <expan>peut-être </expan>
+            </choice> pas toujours assez. <lb/>
           </seg>
           <seg xml:id="C_16_div_2_fr">
-            Il y a très peu de personnes en
-            <placeName ref="FRA">France</placeName> qui
-            songent par exemple à se demander quelle
-            <term>langue</term> on parlait à
+            Il y a très peu de personnes
+            <add place="above">
+              en <placeName ref="FRA">France</placeName>
+            </add> qui
+            <del rend="line-through">
+              <unclear reason="illegible">demander</unclear>
+              <choice>
+                <abbr>p. ex. </abbr>
+                <expan>par example </expan>
+              </choice>
+              <lb/>
+              <unclear reason="illegible">a.</unclear>
+            </del> songent
+            <choice>
+              <abbr>p. ex. </abbr>
+              <expan>par example </expan>
+            </choice> à se demander quelle
+            <term>langue</term> on <lb/>parlait à
             <date from="25-12-800" to="28-01-814">la cour de
-            <persName>Charlemagne</persName> </date> - était-ce
-            du roman ou de l'allemand - et, si c'était l'allemand, était-ce un
-            <term>dialecte</term> disparu ou l'un des
-            <term>dialectes</term> qui se perpétuent aujourd'hui ?
+            <persName ref="CAR">Charlemagne</persName> </date> - était-ce
+            du roman <lb/>ou de l'allemand - et, si c'était l'allemand, était-ce
+            <del rend="line-through">
+               la <lb/>dialecte
+               <unclear reason="illegible">de P.</unclear>
+            </del>
+            un <term>dialecte</term> disparu ou l'un des
+            <term>dia-<lb/>=lectes</term> qui se perpétuent aujourd'hui ?
           </seg>
         </p>
       </div>
@@ -295,30 +438,54 @@
             quanto dovrebbe.
           </seg>
           <seg xml:id="C_16_div_2_it">
-            Ci sono pochissime persone in Francia, che badino, per esempio,
-            a chiedersi quale lingua si parlasse alla corte di Carlo
-            Magno – se fosse romanzo o germanico – e, se fosse germanico,
-            se era un dialetto sparito o uno dei dialetti che si perpetuano
-            ancora oggi?
+            Ci sono pochissime persone in
+            <placeName ref="FRA">Francia</placeName>, che badino,
+            per esempio, a chiedersi quale lingua si parlasse
+            <date from="25-12-800" to="28-01-814">alla corte di
+            <persName ref="CAR">Carlo Magno </persName> </date> – se
+            fosse romanzo o germanico – e, se fosse germanico, se era un
+            dialetto sparito o uno dei dialetti che si perpetuano ancora oggi?
           </seg>
         </p>
       </div>
       <div type="text" facs="D_16_zone" xml:id="D_16_div" xml:lang="fr">
         <p>
           <seg xml:id="D_16_div_1_fr">
-            Il y a très peu d'<term>historiens</term> qui
-            remarquent que les noms des chefs Huns, comme
-            <term>Attila</term>, ne sont pas des noms Huns, mais des
-            noms germaniques, - ce qui est la preuve de tout
-            un <term>état de choses</term> fort intéressant ;
+            Il y a très peu d'<term>historiens</term> <lb/> qui
+            remarquent que les noms des chefs Huns, <lb/> comme
+            <persName ref="ATT">Attila</persName>, ne sont pas des
+            noms Huns, mais des <lb/> noms germaniques, - ce qui est la preuve
+            <del rend="line-throug">d'une </del><lb/> de
+            tout un <term>état de choses</term> fort intéressant ;
           </seg>
           <seg xml:id="D_16_div_2_fr">
-            et en second lieu que ces noms germaniques ne sont pas du premier
-            <term>dialecte</term> venu, ne sont pas saxons ou Scandinaves,
-            mais sont clairement gothiques.
+            et <lb/>
+            <del rend="line-throug">
+              <unclear reason="unclear">
+                pa
+              </unclear>
+            </del>
+            en <num type="ordinal" value="2">2˚</num>
+            lieu que ces noms germaniques .
+            <del rend="line-throug">
+              <unclear reason="unclear">
+                sant spé-<lb/>:cialut
+              </unclear>
+            </del>
+            ne sont pas du <num type="ordinal" value="1">1°</num>
+            <term>dialecte</term> venu,
+            <del rend="line-throug">mais</del><lb/>
+            <add place="left-margin">
+              ne
+              <choice>
+                <abbr>sˇ</abbr>
+                <expan>sont</expan>
+              </choice> pas saxons ou Scandinaves, mais
+            </add> sont clairement gothiques.
           </seg>
           <seg xml:id="D_16_div_3_fr">
-            Mais tous ces <term>faits</term>, grands ou petits,
+            Mais tous ces <term>faits</term>, grands <lb/>
+            <add place="below">ou petits,</add>
           </seg>
         </p>
       </div>
@@ -326,8 +493,9 @@
         <p>
           <seg xml:id="D_16_div_1_it">
             Ci sono pochissimi storici che notino che i nomi dei capi Unni, come
-            Attila, non sono nomi unni, ma germanici, – il che è la prova di
-            tutto uno stato di cose parecchio interessante;
+            <persName ref="ATT">Attila</persName>, non sono nomi unni,
+            ma germanici, – il che è la prova di tutto uno stato
+            di cose parecchio interessante;
           </seg>
           <seg xml:id="D_16_div_2_it">
             e in secondo luogo che questi nomi germanici non sono del primo
@@ -366,8 +534,6 @@
       <link target="#E_16_div_2_fr #E_16_div_2_it"/>
     </linkGrp>
   </text>
-
-
   <facsimile xml:lang="it">
     <surface xml:id="page15" start="#page-15">
       <graphic url="./img/fr_03951_01_p15.jpg" width='3378.33334px' height='4164.33334px' />
@@ -480,5 +646,4 @@
       </zone>
     </surface>
   </facsimile>
-
 </TEI>
