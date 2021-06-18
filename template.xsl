@@ -103,8 +103,16 @@
    <xsl:template name = "testo" > <!-- Sezione testo -->
      <xsl:param name = "facsimile" />
      <xsl:param name = "text" />
-     <p>test1: <xsl:value-of select = "$facsimile/surface/zone/figure/head" /> </p>
-     <p>test2: <xsl:value-of select = "$text/div/p" /></p>
+     <xsl:for-each select="$facsimile/surface/zone/figure">
+       <xsl:variable name="text_id">
+         <xsl:value-of select="substring (../@start ,2 )"/>
+       </xsl:variable>
+       <div class="sezione">
+         <p><xsl:value-of select = "head" /></p>
+         <p><xsl:value-of select = "$text_id" /></p>
+         <p><xsl:value-of select = "$text/div[@xml:id=$text_id]/p" /></p>
+       </div>
+     </xsl:for-each>
    </xsl:template>
 
 </xsl:stylesheet>
