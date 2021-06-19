@@ -187,9 +187,9 @@
             </choice>
             le titre de ce cours – alors<lb/>que d’autres dénominations
             <w rend="overline">comme</w>
-            <term rend="underline">
+            <term>
               <choice>
-                <abbr>gr.</abbr>
+                <abbr rend="underline">gr.</abbr>
                 <expan>Grammaire</expan>
               </choice>
               comparée<lb/>
@@ -539,7 +539,7 @@
       <graphic url="./img/fr_03951_01_p15.jpg" width='3378.33334px' height='4164.33334px' />
       <zone xml:id="A_15_zone" start="#A_15_div" points = ' 307,516 297,233 670,226 627,523 ' >
         <figure>
-          <graphic url="./img/zone/A_15.PNG" />
+          <graphic url="./img/zone/A_15.jpg" />
           <head>Pagina 15</head>
           <figDesc>
             Il numero 15 all'interno di un cerchio a simboleggiare
@@ -549,7 +549,7 @@
       </zone>
       <zone xml:id="B_15_zone" start="#B_15_div" points = ' 790,2113 2124,2053 2120,1939 3044,1869 3047,333 750,349 ' >
         <figure>
-          <graphic url="./img/zone/B_15.PNG" />
+          <graphic url="./img/zone/B_15.jpg" />
           <head>Sezione di testo 1</head>
           <figDesc>
             Testo francese, scritto a mano, composto di 11 righe, in buone condizioni.
@@ -561,7 +561,7 @@
       </zone>
       <zone xml:id="C_15_zone" start="#C_15_div" points = ' 300,1719 790,1686 777,2026 304,2046 ' >
         <figure>
-          <graphic url="./img/zone/C_15.PNG" />
+          <graphic url="./img/zone/C_15.jpg" />
           <head>Appunto a lato</head>
           <figDesc>
             Appunto di testo scritto a mano e barrato.
@@ -572,7 +572,7 @@
       </zone>
       <zone xml:id="D_15_zone" start="#D_15_div" points =  ' 344,3473 3077,3326 3044,1886 2120,1949 2114,2053 330,2173 ' >
         <figure>
-          <graphic url="./img/zone/D_15.PNG" />
+          <graphic url="./img/zone/D_15.jpg" />
           <head>Sezione di testo 2</head>
           <figDesc>
             Testo francese scritto a mano, composto di 10 righe, in buone condizioni.
@@ -585,7 +585,7 @@
       </zone>
       <zone xml:id="E_15_zone" start="#E_15_div" points =  ' 3074,3333 3087,3736 787,3879 810,3443 ' >
         <figure>
-          <graphic url="./img/zone/E_15.PNG" />
+          <graphic url="./img/zone/E_15.jpg" />
           <head>Sezione di testo 3</head>
           <figDesc>
             Testo francese scritto a mano, composto di 3 righe, in buone condizioni.
@@ -598,7 +598,7 @@
       <graphic url="./img/fr_03951_01_p16.jpg" width='3354px' height='4182px' />
       <zone xml:id="A_16_zone" start="#A_16_div" points = ' 296,213 642,218 649,457 299,454 ' >
         <figure>
-          <graphic url="./img/zone/A_16.PNG" />
+          <graphic url="./img/zone/A_16.jpg" />
           <head>Pagina 16</head>
           <figDesc>
             Il numero 16, seguito da un punto, all'interno di un ovale a
@@ -608,7 +608,7 @@
       </zone>
       <zone xml:id="B_16_zone" start="#B_16_div" points = ' 2994,1806 3024,356 650,353 690,1866 ' >
         <figure>
-          <graphic url="./img/zone/B_16.PNG" />
+          <graphic url="./img/zone/B_16.jpg" />
           <head>Sezione di testo 1</head>
           <figDesc>
             Testo francese scritto a mano, composto di 11 righe, in buone condizioni.
@@ -619,7 +619,7 @@
       </zone>
       <zone xml:id="C_16_zone" start="#C_16_div" points = ' 1987,2973 1997,2873 2997,2836 3007,1840 700,1896 784,3046 ' >
         <figure>
-          <graphic url="./img/zone/C_16.PNG" />
+          <graphic url="./img/zone/C_16.jpg" />
           <head>Sezione di testo 2</head>
           <figDesc>
             Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
@@ -632,7 +632,7 @@
       </zone>
       <zone xml:id="D_16_zone" start="#D_16_div" points = ' 3007,2843 3010,3876 250,3880 244,3073 2020,2980 2014,2866 ' >
       <figure>
-          <graphic url="./img/zone/D_16.PNG" />
+          <graphic url="./img/zone/D_16.jpg" />
           <head>Sezione di testo 3</head>
           <figDesc>
             Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
