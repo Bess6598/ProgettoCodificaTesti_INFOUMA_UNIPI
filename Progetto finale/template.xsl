@@ -8,6 +8,7 @@
 
     <xsl:variable name="style">
       <link rel="stylesheet" type="text/css" href="./stile.css" />
+      <link rel="icon" type="image/x-icon"  href="./img/icona.ico" />
     </xsl:variable>
 
     <xsl:variable name="title">
@@ -19,37 +20,41 @@
         <head>
           <title> <xsl:copy-of select="$title"/> </title>
           <xsl:copy-of select="$style"/>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+          <script type="text/javascript" src="file.js"></script>
         </head>
         <body>
-
-          <div class="index">
+          <div class="zoom"></div>
+          <div id="titolo">
             <h1> <xsl:copy-of select="$title"/> </h1>
             <p class="subtitle">
               Autore <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/author" /> |
               <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/resp" />
               <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/name" />
             </p>
-            <ul id="menu">
-              <li> <a href="#ancora_antroponimi">Persone</a> </li>
-              <li> <a href="#ancora_toponimi">Luoghi</a> </li>
-              <li> <a href="#ancora_istituzioni">Istituzioni</a> </li>
-              <li> <a href="#ancora_testo">Testo</a> </li>
-            </ul>
+          </div>
+          <ul id="menu">
+            <li> <a href="#ancora_antroponimi">Persone</a> </li>
+            <li> <a href="#ancora_toponimi">Luoghi</a> </li>
+            <li> <a href="#ancora_istituzioni">Istituzioni</a> </li>
+            <li> <a href="#ancora_testo">Testo</a> </li>
+          </ul>
 
+          <div class="index">
+            <h2 id="ancora_antroponimi">Persone</h2>
             <div id="persone_section">
-              <h2 id="ancora_antroponimi">Persone</h2>
               <xsl:apply-templates select="TEI/standOff/listPerson"/>
             </div>
+            <h2 id="ancora_toponimi">Luoghi</h2>
             <div id="luoghi_section">
-              <h2 id="ancora_toponimi">Lughi</h2>
               <xsl:apply-templates select="TEI/standOff/listPlace"/>
             </div>
+            <h2 id="ancora_istituzioni">Istituzioni</h2>
             <div id="istituzioni_section">
-              <h2 id="ancora_istituzioni">Istituzioni</h2>
               <xsl:apply-templates select="TEI/standOff/listObject"/>
             </div>
+            <h2 id="ancora_testo">Testo</h2>
             <div id="testo_section">
-              <h2 id="ancora_testo">Testo</h2>
               <xsl:call-template name="testo">
                 <xsl:with-param name="facsimile" select = "TEI/facsimile" />
                 <xsl:with-param name="text" select = "TEI/text/body" />
@@ -65,15 +70,15 @@
       <xsl:for-each select="person">
         <ul id="{./@xml:id}">
           <li>
-            Nome:
+            <span>Nome:</span>
             <xsl:value-of select="persName/forename"/>
             <xsl:value-of select="persName/surname"/>
             <xsl:value-of select="persName/roleName"/>
           </li>
-          <li>Sesso: <xsl:value-of select="sex"/></li>
-          <li>Nascita: <xsl:value-of select="birth/@when"/></li>
-          <li>Morte: <xsl:value-of select="death/@when"/></li>
-          <li>Note: <xsl:value-of select="note"/></li>
+          <li><span>Sesso:</span> <xsl:value-of select="sex"/></li>
+          <li><span>Nascita:</span> <xsl:value-of select="birth/@when"/></li>
+          <li><span>Morte:</span> <xsl:value-of select="death/@when"/></li>
+          <li><span>Note:</span> <xsl:value-of select="note"/></li>
         </ul>
       </xsl:for-each>
     </xsl:template>
@@ -81,12 +86,14 @@
    <xsl:template match="listPlace"> <!-- Sezione luoghi -->
      <xsl:for-each select="place">
        <div class="toponimo">
-         <h4 id="{./@xml:id}"><xsl:value-of select="placeName"/></h4>
-         <p><xsl:value-of select="note"/></p>
          <xsl:if test="not(placeName/@notAfter)">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11379667.893494574!2d-6.924094218123403!3d45.8665231138562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sen!2sit!4v1623947340545!5m2!1sen!2sit" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy">
           </iframe>
          </xsl:if>
+         <div>
+           <h4 id="{./@xml:id}"><xsl:value-of select="placeName"/></h4>
+           <p><xsl:value-of select="note"/></p>
+         </div>
        </div>
      </xsl:for-each>
    </xsl:template>
@@ -112,9 +119,16 @@
        </xsl:variable>
        <div class="sezione">
          <h4><xsl:value-of select = "head" /></h4>
-         <div class="img">
-           <p class="desc"><xsl:value-of select = "figDesc" /></p>
-           <img class="img_sezione" src="{graphic/@url}"/>
+          <p class="desc"><xsl:value-of select = "figDesc" /></p>
+          <div class="img">
+           <xsl:choose>
+            <xsl:when test="graphic/@width &lt; 1000">
+              <img class="img_sezione small" src="{graphic/@url}"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <img class="img_sezione" src="{graphic/@url}"/>
+            </xsl:otherwise>
+          </xsl:choose>
          </div>
          <div class="testi">
            <div class="testo_fr">
@@ -160,11 +174,16 @@
     <span class="gap"> *** </span>
   </xsl:template>
 
-  <xsl:template match="placeName | persName | objectName">
-    <xsl:variable name="ancora">
-      <xsl:value-of select="concat('#', ./@ref)"/>
-    </xsl:variable>
-    <a href="{$ancora}"><xsl:value-of select="."/></a>
+  <xsl:template match="persName">
+    <a href="#ancora_antroponimi"><xsl:value-of select="."/></a>
+  </xsl:template>
+
+  <xsl:template match="placeName">
+    <a href="#ancora_toponimi"><xsl:value-of select="."/></a>
+  </xsl:template>
+
+  <xsl:template match="objectName">
+    <a href="#ancora_istituzioni"><xsl:value-of select="."/></a>
   </xsl:template>
 
 </xsl:stylesheet>

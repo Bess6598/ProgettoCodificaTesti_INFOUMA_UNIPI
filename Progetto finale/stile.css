@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+:root {
+  --main-bg-color: #fdfdf9;
+  --main-dark-color: #1c415c;
+  --main-darker-color: 	#1d1d23;
+  --main-bg-div: #f5f5dc;
+}
+
+html{ margin: 0px; }
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-darker-color);
 }
+
+#titolo {
+  margin: 0px;
+  background-color: var(--main-dark-color);
+  color: white;
+}
+
+#titolo h1, #titolo p{
+  margin: 0px;
+  padding: 1%;
+  text-align: center;
+}
+
+#titolo h1, h2 {  font-family: 'Cinzel', serif; }
+h2, h4 { color: var(--main-dark-color); }
+h4 { font-size: 120%; }
+
+.index { margin: 1%; }
 
 /*---------------------------Menu---------------------------------------------*/
 #menu {
@@ -9,15 +39,13 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
+  background-color: var(--main-dark-color);
   position: sticky;
   top: 0;
+  border-bottom: 5px solid var(--main-darker-color);
 }
 
-#menu li {
-  float: left;
-}
+#menu li { float: left; }
 
 #menu li a {
   display: block;
@@ -28,8 +56,86 @@ body {
 }
 
 #menu li a:hover {
-  background-color: #111;
+  text-decoration: underline;
+  text-decoration-style: double; }
+
+/*------------------------Persone-Luoghi-Istituzioni--------------------------*/
+
+#persone_section, #luoghi_section, #istituzioni_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
 }
+
+#persone_section ul, .toponimo, #istituzioni_section div {
+  list-style-type: none;
+  width: 30%;
+  background-color: #f6f2ef;
+  border: 5px groove var(--main-dark-color);
+  padding: 1%;
+}
+
+#persone_section ul span{ font-weight: bold; }
+
+iframe {
+  float: left;
+  margin: 1%;
+}
+/*---------------------------Immagini-----------------------------------------*/
+
+div.img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img.img_sezione {
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 1000px;
+  max-width: 1000px;
+}
+
+img.small {
+  overflow: hidden;
+  width: 15%;
+  height: auto;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.zoom{
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-color: var(--main-bg-color);
+  cursor: crosshair;
+  border: 5px groove var(--main-darker-color);
+}
+
+/*---------------------------Testo--------------------------------------------*/
+
+.testi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.testo_fr, .testo_it { width: 40%; }
+
+.testi p { margin-bottom: 0px; }
+
+.underlined { text-decoration: underline; }
+
+.line-through { text-decoration: line-through; }
 
 /*---------------------------Tooltip------------------------------------------*/
 .tooltip {
@@ -64,6 +170,4 @@ body {
   border-color: black transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
+.tooltip:hover .tooltiptext { visibility: visible; }
