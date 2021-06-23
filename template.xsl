@@ -24,44 +24,61 @@
           <script type="text/javascript" src="file.js"></script>
         </head>
         <body>
-          <div class="zoom"></div>
-          <div id="titolo">
-            <h1> <xsl:copy-of select="$title"/> </h1>
-            <p class="subtitle">
-              Autore <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/author" /> |
-              <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/resp" />
-              <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/name" />
-            </p>
-          </div>
-          <ul id="menu">
-            <li> <a href="#ancora_antroponimi">Persone</a> </li>
-            <li> <a href="#ancora_toponimi">Luoghi</a> </li>
-            <li> <a href="#ancora_istituzioni">Istituzioni</a> </li>
-            <li> <a href="#ancora_testo">Testo</a> </li>
-          </ul>
+          <div id="#page_cpontainer">
+            <div class="zoom"></div>
+            <div id="titolo">
+              <h1> <xsl:copy-of select="$title"/> </h1>
+              <p class="subtitle">
+                Autore <xsl:value-of select="TEI/teiHeader/fileDesc/sourceDesc/bibl/author" /> |
+                <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/resp" />
+                <xsl:value-of select="TEI/teiHeader/fileDesc/titleStmt/respStmt/name" />
+              </p>
+            </div>
+            <ul id="menu">
+              <li> <a id="persone_button" class="checkPage" href="#ancora_antroponimi">Persone</a> </li>
+              <li> <a id="luoghi_button" class="checkPage" href="#ancora_toponimi">Luoghi</a> </li>
+              <li> <a id="istituzioni_button" class="checkPage" href="#ancora_istituzioni">Istituzioni</a> </li>
+              <li> <a id="testo_button" class="checkPage" href="#ancora_testo">Testo</a> </li>
+            </ul>
 
-          <div class="index">
-            <h2 id="ancora_antroponimi">Persone</h2>
-            <div id="persone_section">
-              <xsl:apply-templates select="TEI/standOff/listPerson"/>
+            <div class="index">
+              <div id="persone_page">
+                <h2>Persone</h2>
+                <div id="persone_section">
+                  <xsl:apply-templates select="TEI/standOff/listPerson"/>
+                </div>
+              </div>
+              <div id="luoghi_page">
+                <h2>Luoghi</h2>
+                <div id="luoghi_section">
+                  <xsl:apply-templates select="TEI/standOff/listPlace"/>
+                </div>
+              </div>
+              <div id="istituzioni_page">
+                <h2>Istituzioni</h2>
+                <div id="istituzioni_section">
+                  <xsl:apply-templates select="TEI/standOff/listObject"/>
+                </div>
+              </div>
+              <div id="testo_page">
+                <h2>Testo</h2>
+                <div id="testo_section">
+                  <xsl:call-template name="testo">
+                    <xsl:with-param name="facsimile" select = "TEI/facsimile" />
+                    <xsl:with-param name="text" select = "TEI/text/body" />
+                  </xsl:call-template>
+                </div>
+              </div>
             </div>
-            <h2 id="ancora_toponimi">Luoghi</h2>
-            <div id="luoghi_section">
-              <xsl:apply-templates select="TEI/standOff/listPlace"/>
-            </div>
-            <h2 id="ancora_istituzioni">Istituzioni</h2>
-            <div id="istituzioni_section">
-              <xsl:apply-templates select="TEI/standOff/listObject"/>
-            </div>
-            <h2 id="ancora_testo">Testo</h2>
-            <div id="testo_section">
-              <xsl:call-template name="testo">
-                <xsl:with-param name="facsimile" select = "TEI/facsimile" />
-                <xsl:with-param name="text" select = "TEI/text/body" />
-              </xsl:call-template>
-            </div>
+            <footer>
+              <p>
+                Sito realizzato da
+                <a  title="Pagina GitHub"  href="https://github.com/Bess6598" target="_blank" >
+                  Carolina Sgherri
+                </a>
+              </p>
+            </footer>
           </div>
-
         </body>
       </html>
     </xsl:template>
@@ -75,10 +92,10 @@
             <xsl:value-of select="persName/surname"/>
             <xsl:value-of select="persName/roleName"/>
           </li>
-          <li><span>Sesso:</span> <xsl:value-of select="sex"/></li>
-          <li><span>Nascita:</span> <xsl:value-of select="birth/@when"/></li>
-          <li><span>Morte:</span> <xsl:value-of select="death/@when"/></li>
-          <li><span>Note:</span> <xsl:value-of select="note"/></li>
+          <li><span>Sesso: </span> <xsl:value-of select="sex"/></li>
+          <li><span>Nascita: </span> <xsl:value-of select="birth/@when"/></li>
+          <li><span>Morte: </span> <xsl:value-of select="death/@when"/></li>
+          <li><span>Note: </span> <xsl:value-of select="note"/></li>
         </ul>
       </xsl:for-each>
     </xsl:template>
@@ -148,6 +165,10 @@
      </p>
    </xsl:template>
 
+   <xsl:template match="term">
+     <span class="term"><xsl:apply-templates/></span>
+   </xsl:template>
+
   <xsl:template match="lb">
     <br/>
   </xsl:template>
@@ -175,15 +196,15 @@
   </xsl:template>
 
   <xsl:template match="persName">
-    <a href="#ancora_antroponimi"><xsl:value-of select="."/></a>
+    <a title="persona" class="checkPage" href="#ancora_antroponimi"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="placeName">
-    <a href="#ancora_toponimi"><xsl:value-of select="."/></a>
+    <a title="luogo" class="checkPage" href="#ancora_toponimi"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="objectName">
-    <a href="#ancora_istituzioni"><xsl:value-of select="."/></a>
+    <a title="istituzione" class="checkPage" href="#ancora_istituzioni"><xsl:apply-templates/></a>
   </xsl:template>
 
 </xsl:stylesheet>
