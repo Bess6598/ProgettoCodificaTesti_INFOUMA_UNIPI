@@ -122,25 +122,27 @@ footer p, footer a {
 
 #menu li a:hover { border-bottom: 2px solid white; }
 
-/*------------------------Persone-Luoghi-Istituzioni--------------------------*/
+/*----------------Persone-Luoghi-Istituzioni-Glossario------------------------*/
 
-#persone_section, #luoghi_section, #istituzioni_section {
+#persone_section, #luoghi_section, #istituzioni_section, #glossario_section {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
   align-content: stretch;
 }
 
-#persone_section ul, .toponimo, #istituzioni_section div {
+#persone_section ul, .toponimo, #istituzioni_section div, #glossario_section div {
   list-style-type: none;
-  width: 30%;
+  width: 25%;
   background-color: #f6f2ef;
   border: 5px groove var(--yellow);
   padding: 1%;
+  margin: 2%;
 }
 
-#persone_section ul span{ font-weight: bold; }
+#persone_section ul span, #glossario_section div span { font-weight: bold; }
 
 iframe {
   float: left;

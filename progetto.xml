@@ -189,11 +189,11 @@
       </object>
     </listObject>
     <list type="gloss">
-      <label>
+      <label n="1">
         <term xml:lang="fr" xml:id="SC_HI">Science historique</term>
         <term xml:lang="it" ref="#SC_HI">Scienza storica</term>
       </label>
-      <item>
+      <item n="1">
         <gloss xml:lang="fr" target="#SC_HI" source="https://www.universalis.fr/classification/histoire/science-historique/">
           L'histoire scientifique, fondée sur des sources documentaires
           soumises à une étude critique, confrontées entre elles et exploitées
@@ -202,11 +202,11 @@
           évolution au cours des diverses époques.
         </gloss>
       </item>
-      <label>
+      <label n="2">
         <term xml:lang="fr" xml:id="GR_CO">Grammaire comparée</term>
         <term xml:lang="it" ref="#GR_CO">Grammatica comparata</term>
       </label>
-      <item>
+      <item n="2">
         <gloss xml:lang="fr" target="#GR_CO" source="https://www.cambridge.org/core/books/apercu-general-de-la-science-comparative-des-langues/definition-de-la-grammaire-comparee/87C03A260CBFEB3E090AAEA8CC0A15B5">
           La grammaire renferme cet ensemble de règles par lequel se manifeste
           l'organisme d'une langue Lorsqu'elle s'efforce d'indiquer jusqu'à un
@@ -218,20 +218,20 @@
           comparée.
         </gloss>
       </item>
-      <label>
+      <label n="3">
         <term xml:lang="fr" xml:id="HIS">Histoire</term>
         <term xml:lang="it" ref="#HIS">Storia</term>
       </label>
-      <item>
+      <item n="3">
         <gloss xml:lang="fr" target="#HIS" source="http://ditmao-dev.ilc.cnr.it/saussure">
           En linguistique interne : diachronie, linguistique évolutive (Engler, 27)
         </gloss>
       </item>
-      <label>
+      <label n="4">
         <term xml:lang="fr" xml:id="LAN">Langue</term>
         <term xml:lang="it" ref="#LAN">Lingua</term>
       </label>
-      <item>
+      <item n="4">
         <gloss xml:lang="fr" target="#LAN" source="http://ditmao-dev.ilc.cnr.it/saussure">
           L'unite des langues romanes comporte le fractionnement entre le
           français, l'italien etc.; [Cahier I, 1908-1909, Komatsu, 1997]
@@ -239,36 +239,36 @@
           [Cahier VII, 1910-1911, Komatsu, 1993]
         </gloss>
       </item>
-      <label>
+      <label n="5">
         <term xml:lang="fr" xml:id="OB_AN_HIS">Objet d'analyse Hstorique</term>
         <term xml:lang="it" ref="#OB_AN_HIS">Oggetto di analisi storica</term>
       </label>
-      <item>
+      <item n="5">
         <gloss></gloss>
       </item>
-      <label>
+      <label n="6">
         <term xml:lang="fr" xml:id="AN_AB">Analyse abstraite</term>
         <term xml:lang="it" ref="#AN_AB">Analisi astratta</term>
       </label>
-      <item>
+      <item n="6">
         <gloss></gloss>
       </item>
-      <label>
+      <label n="7">
         <term xml:lang="fr" xml:id="FAI">Faits</term>
         <term xml:lang="it" ref="#FAI">Faits</term>
       </label>
-      <item>
+      <item n="7">
         <gloss xml:lang="fr" target="#FAI" source="http://ditmao-dev.ilc.cnr.it/saussure">
           Chose reconnue comme essentielle dans telle ou telle catégorie, sous
           tel ou tel point de vue. C'est une création de l'esprit mais
           correspondant à des réalités (Engler, 24)
         </gloss>
       </item>
-      <label>
+      <label n="8">
         <term xml:lang="fr" xml:id="LOI">Loi</term>
         <term xml:lang="it" ref="#LOI">Legge</term>
       </label>
-      <item>
+      <item n="8">
         <gloss xml:lang="fr" target="#LOI" source="http://ditmao-dev.ilc.cnr.it/saussure">
           Loi n'est pas définissable à moins de distinguer les deux choses que
           ce nom représente. Se trouve n'être un terme applicable avec justesse
@@ -277,50 +277,50 @@
           d'un événement (lois diachroniques) (Godel, 268)
         </gloss>
       </item>
-      <label>
+      <label n="9">
         <term xml:lang="fr" xml:id="ORG">Organique</term>
         <term xml:lang="it" ref="#ORG">Organico</term>
       </label>
-      <item>
+      <item n="9">
         <gloss xml:lang="fr" target="#ORG" source="https://www.larousse.fr/dictionnaires/francais/organique/56415">
           Qui est inhérent à la structure de quelque chose, à sa constitution
         </gloss>
       </item>
-      <label>
+      <label n="10">
         <term xml:lang="fr" xml:id="LANG">Language</term>
         <term xml:lang="it" ref="#LANG">Linguaggio</term>
       </label>
-      <item>
+      <item n="10">
         <gloss xml:lang="fr" target="#LANG" source="https://www.larousse.fr/dictionnaires/francais/langage/46165">
           Capacité, observée chez tous les hommes, d'exprimer leur pensée et
           de communiquer au moyen d'un système de signes vocaux et
           éventuellement graphiques (la langue).
         </gloss>
       </item>
-      <label>
+      <label n="11">
         <term xml:lang="fr" xml:id="ACC">Accident</term>
         <term xml:lang="it" ref="#ACC">Accidentale</term>
       </label>
-      <item>
+      <item n="11">
         <gloss xml:lang="fr" target="#ACC" source="http://ditmao-dev.ilc.cnr.it/saussure">
           Fait ou événement accidentel (opposé à essentiel). En particulier
           "les faits diachroniques sont accidentels" 1557
         </gloss>
       </item>
-      <label>
+      <label n="12">
         <term xml:lang="fr" xml:id="LING">Linguistique</term>
         <term xml:lang="it" ref="#LING">Linguistica</term>
       </label>
-      <item>
+      <item n="12">
         <gloss xml:lang="fr" target="#LING" source="https://www.larousse.fr/dictionnaires/francais/linguistique/47271">
           Science qui a pour objet l'étude du langage et des langues.
         </gloss>
       </item>
-      <label>
+      <label n="13">
         <term xml:lang="fr" xml:id="EPO">Èpoque</term>
         <term xml:lang="it" ref="#EPO">Epoca</term>
       </label>
-      <item>
+      <item n="13">
         <gloss xml:lang="fr" target="#EPO" source="http://ditmao-dev.ilc.cnr.it/saussure">
           Point du temps, opposé à période (espace de temps). Cf. époque des
           Antonins : « on se permet d'employer le mot opposé (époque) comme
@@ -329,40 +329,40 @@
           (Engler, 22)
         </gloss>
       </item>
-      <label>
+      <label n="14">
         <term xml:lang="fr" xml:id="IDI">Idiome</term>
         <term xml:lang="it" ref="#IDI">Idioma</term>
       </label>
-      <item>
+      <item n="15">
         <gloss xml:lang="fr" target="#IDI" source="http://ditmao-dev.ilc.cnr.it/saussure">
           C'est la langue considérée dans ses caractères spéciaux, dans les
           caractères qui sont propres à un peuple.
           [Cahier I, 1910-1911, Komatsu, 1993]
         </gloss>
       </item>
-      <label>
+      <label n="16">
         <term xml:lang="fr" xml:id="FA_HI">Fait historique</term>
         <term xml:lang="it" ref="#FA_HI">Fatto storico</term>
       </label>
-      <item>
+      <item n="16">
         <gloss xml:lang="fr" target="#FA_HI" source="https://fr.wiktionary.org/wiki/fait_historique">
         </gloss>
       </item>
-      <label>
+      <label n="17">
         <term xml:lang="fr" xml:id="PO_VU">Point de vue</term>
         <term xml:lang="it" ref="#PO_VU">Punto di vista</term>
       </label>
-      <item>
+      <item n="17">
         <gloss xml:lang="fr" target="#PO_VU" source="https://www.larousse.fr/dictionnaires/francais/point_de_vue/62008">
           Plan, aspect sous lequel on se place pour examiner quelque chose.
           Manière qu'a quelqu'un d'envisager, de voir, de juger
         </gloss>
       </item>
-      <label>
+      <label n="18">
         <term xml:lang="fr" xml:id="HI_LA">Histoire de la langue</term>
         <term xml:lang="it" ref="#HI_LA">Storia della lingua</term>
       </label>
-      <item>
+      <item n="18">
         <gloss xml:lang="fr" target="#HI_LA" source="https://fr.wikipedia.org/wiki/Origine_du_langage">
           L’origine du langage humain a toujours suscité l’intérêt des penseurs.
           Le sujet est étudié scientifiquement dans le cadre de plusieurs
@@ -370,20 +370,20 @@
           moléculaire et en linguistique historique.
         </gloss>
       </item>
-      <label>
+      <label n="19">
         <term xml:lang="fr" xml:id="HISN">Historien</term>
         <term xml:lang="it" ref="#HISN">Storico</term>
       </label>
-      <item>
+      <item n="19">
         <gloss xml:lang="fr" target="#HISN" source="https://www.larousse.fr/dictionnaires/francais/historien/40084">
           Spécialiste des sciences historiques ; auteur d'ouvrages historiques.
         </gloss>
       </item>
-      <label>
+      <label n="20">
         <term xml:lang="fr" xml:id="DIA">Dialecte</term>
         <term xml:lang="it" ref="#DIA">Dialetto</term>
       </label>
-      <item>
+      <item n="20">
         <gloss xml:lang="fr" target="#DIQ" source="http://ditmao-dev.ilc.cnr.it/saussure">
           Ce qui fera d'un dialecte litteraire
           [Riedlinger Cahier VII, 1908-1909, Komatsu, 1997];
@@ -395,11 +395,11 @@
           dialectes. [Cahier I, 1910-1911, Komatsu, 1993]
         </gloss>
       </item>
-      <label>
+      <label n="21">
         <term xml:lang="fr" xml:id="ET_CH">Ètat de choses</term>
         <term xml:lang="it" ref="#ET_CH">Stato di cose</term>
       </label>
-      <item>
+      <item n="21">
         <gloss xml:lang="fr" target="#ET_CH" source="http://dictionnaire.sensagent.leparisien.fr/%C3%A9tat%20de%20choses/fr-fr/">
           Situation, vue comme ensemble de toutes ses caractéristiques.
         </gloss>
