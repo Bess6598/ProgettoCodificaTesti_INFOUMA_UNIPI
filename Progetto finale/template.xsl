@@ -35,13 +35,30 @@
               </p>
             </div>
             <ul id="menu">
-              <li> <a id="persone_button" class="checkPage" href="#ancora_antroponimi">Persone</a> </li>
-              <li> <a id="luoghi_button" class="checkPage" href="#ancora_toponimi">Luoghi</a> </li>
-              <li> <a id="istituzioni_button" class="checkPage" href="#ancora_istituzioni">Istituzioni</a> </li>
-              <li> <a id="testo_button" class="checkPage" href="#ancora_testo">Testo</a> </li>
+              <li>
+                <a id="home_button" class="checkPage" href="#ancora_home">Home</a>
+              </li>
+              <li>
+                <a id="persone_button" class="checkPage" href="#ancora_antroponimi">Persone</a>
+              </li>
+              <li>
+                <a id="luoghi_button" class="checkPage" href="#ancora_toponimi">Luoghi</a>
+              </li>
+              <li>
+                <a id="istituzioni_button" class="checkPage" href="#ancora_istituzioni">Istituzioni</a>
+              </li>
+              <li>
+                <a id="glossario_button" class="checkPage" href="#ancora_glossario">Glosario</a>
+              </li>
+              <li>
+                <a id="testo_button" class="checkPage" href="#ancora_testo">Testo</a>
+              </li>
             </ul>
 
             <div class="index">
+              <div id="home_page">
+                Home page provvisoria
+              </div>
               <div id="persone_page">
                 <h2>Persone</h2>
                 <div id="persone_section">
@@ -58,6 +75,12 @@
                 <h2>Istituzioni</h2>
                 <div id="istituzioni_section">
                   <xsl:apply-templates select="tei:standOff/tei:listObject"/>
+                </div>
+              </div>
+              <div id="glossario_page">
+                <h2>Glossario</h2>
+                <div id="glossario_section">
+                  <xsl:apply-templates select="tei:standOff/tei:list"/>
                 </div>
               </div>
               <div id="testo_page">
@@ -86,12 +109,11 @@
     <xsl:template match="tei:listPerson"> <!-- Sezione persone -->
       <xsl:for-each select="tei:person">
         <ul id="{./@xml:id}">
-          <li>
-            <span>Nome:</span>
+          <h4>
             <xsl:value-of select="tei:persName/tei:forename"/>
             <xsl:value-of select="tei:persName/tei:surname"/>
             <xsl:value-of select="tei:persName/tei:roleName"/>
-          </li>
+          </h4>
           <li><span>Sesso: </span> <xsl:value-of select="tei:sex"/></li>
           <li><span>Nascita: </span> <xsl:value-of select="tei:birth/@when"/></li>
           <li><span>Morte: </span> <xsl:value-of select="tei:death/@when"/></li>
@@ -123,6 +145,23 @@
        </div>
      </xsl:for-each>
    </xsl:template>
+
+   <xsl:template match="tei:list"> <!-- Sezione glossario -->
+     <xsl:for-each select="tei:label">
+       <xsl:variable name="n">
+         <xsl:value-of select="./@n"/>
+       </xsl:variable>
+       <div>
+          <h4><xsl:value-of select="tei:term[@xml:lang='fr']"/></h4>
+          <p>
+            <span>Traduzione: </span>
+            <xsl:value-of select="tei:term[@xml:lang='it']"/>
+          </p>
+          <p><xsl:value-of select="../tei:item[@n=$n]/tei:gloss"/></p>
+       </div>
+     </xsl:for-each>
+   </xsl:template>
+
 
    <xsl:template name = "testo" > <!-- Sezione testo -->
      <xsl:param name = "facsimile" />

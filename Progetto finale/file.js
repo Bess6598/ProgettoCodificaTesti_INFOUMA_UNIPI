@@ -37,52 +37,48 @@ function zoom() {
   });
 }
 
+function hide_all() {
+  $('#home_page').hide();
+  $('#luoghi_home').hide();
+  $('#persone_page').hide();
+  $('#luoghi_page').hide();
+  $('#istituzioni_page').hide();
+  $('#glossario_page').hide();
+  $('#testo_page').hide();
+}
+
 function choosePage(el) {
+  hide_all();
   switch(el) {
     case '#ancora_antroponimi':
       $('#persone_page').show();
-      $('#luoghi_page').hide();
-      $('#istituzioni_page').hide();
-      $('#testo_page').hide();
       break;
     case '#ancora_toponimi':
-      $('#persone_page').hide();
       $('#luoghi_page').show();
-      $('#istituzioni_page').hide();
-      $('#testo_page').hide();
       break;
     case '#ancora_istituzioni':
-      $('#persone_page').hide();
-      $('#luoghi_page').hide();
       $('#istituzioni_page').show();
-      $('#testo_page').hide();
+      break;
+    case '#ancora_glossario':
+      $('#glossario_page').show();
+      break;
+    case '#ancora_testo':
+      $('#testo_page').show();
       break;
     default:
-      $('#persone_page').hide();
-      $('#luoghi_page').hide();
-      $('#istituzioni_page').hide();
-      $('#testo_page').show();
+      $('#home_page').show();
       break;
   }
 }
 
 $( document ).ready(function() {
-
-  var el;
-  if (window.location.hash != "")
-    el = window.location.hash;
-  else
-    el = '#testo_page';
-  choosePage(el);
-
   $('.zoom').hide();
-
+  choosePage(window.location.hash);
   $('.checkPage').each(function() {
     $(this).click( function() {
       choosePage($(this).attr("href"));
     });
   });
-
   $('img').each(function() {
     $(this).hover(zoom);
   });
