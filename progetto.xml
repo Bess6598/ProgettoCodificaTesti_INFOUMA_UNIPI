@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE teiCorpus>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <?xml-stylesheet type="text/xsl" href="template.xsl"?>
 <TEI>
   <teiHeader xml:lang="it">
@@ -10,17 +10,32 @@
           <resp>Codifica XML TEI a cura di </resp>
           <name>Carolina Sgherri</name>
         </respStmt>
+        <respStmt>
+          <resp>Trascrizione a cura di </resp>
+          <name>Rudolf Engler</name>
+          <name>Simon Bouquet</name>
+        </respStmt>
+        <respStmt>
+          <resp>Traduzione a cura di </resp>
+          <name>E. Fadda</name>
+        </respStmt>
+        <respStmt>
+          <resp>Digitalizzazione immagini </resp>
+          <name>Bibliothèque de Genève</name>
+        </respStmt>
       </titleStmt>
       <publicationStmt>
-        <distributor>Bibliothèque de Genève</distributor>
+        <distributor>Università di Pisa</distributor>
       </publicationStmt>
       <sourceDesc>
-        <bibl>
-          <title xml:lang="fr">
+        <bibl xml:lang="fr">
+          <title>
+            BGE Ms. fr. 3951/1.15-16
             Trois premières conférences à l'Université
             (cours d'ouverture, novembre 1891)
           </title>
           <author ref="#SAU">Ferdinand de Saussure</author>
+          <publisher>Bibliotèque de Genève</publisher>
           <date when="1891-11">novembre 1891</date>
         </bibl>
         <msDesc>
@@ -62,6 +77,26 @@
             </objectDesc>
           </physDesc>
         </msDesc>
+        <bibl xml:lang="fr">
+          <title>
+            Écrits de linguistique générale
+          </title>
+          <author ref="#SAU">Ferdinand de Saussure</author>
+          <editor>Simon Bouquet</editor>
+          <editor>Rudolf Engler</editor>
+          <publisher>Éditions Gallimard</publisher>
+          <date when="2002-02-06">06 febbraio 2002</date>
+        </bibl>
+        <bibl  xml:lang="it">
+          <title>
+            Prima, Seconda, Terza Prolusione
+          </title>
+          <author ref="#SAU">Ferdinand de Saussure</author>
+          <editor>Simon Bouquet</editor>
+          <editor>Rudolf Engler</editor>
+          <editor role="translator">Emanuele Fadda</editor>
+          <date when="2006">2006</date>
+        </bibl>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -153,6 +188,223 @@
         </p>
       </object>
     </listObject>
+    <list type="gloss">
+      <label>
+        <term xml:lang="fr" xml:id="SC_HI">Science historique</term>
+        <term xml:lang="it" ref="#SC_HI">Scienza storica</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#SC_HI" source="https://www.universalis.fr/classification/histoire/science-historique/">
+          L'histoire scientifique, fondée sur des sources documentaires
+          soumises à une étude critique, confrontées entre elles et exploitées
+          selon des règles rigoureuses qui supposent une connaissance solide
+          du contexte, a pour objet l'étude des sociétés humaines et de leur
+          évolution au cours des diverses époques.
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="GR_CO">Grammaire comparée</term>
+        <term xml:lang="it" ref="#GR_CO">Grammatica comparata</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#GR_CO" source="https://www.cambridge.org/core/books/apercu-general-de-la-science-comparative-des-langues/definition-de-la-grammaire-comparee/87C03A260CBFEB3E090AAEA8CC0A15B5">
+          La grammaire renferme cet ensemble de règles par lequel se manifeste
+          l'organisme d'une langue Lorsqu'elle s'efforce d'indiquer jusqu'à un
+          certain point les origines de ces règles, d'en expliquer les causes
+          et d'en décrire l'enchaînement, on l'appelle grammaire raisonnée.
+          Lorsque, pour donner plus de force à cette méthode, elle a recours à
+          des exemples et à des règles empruntés à la grammaire de plusieurs
+          autres langues, étrangères ou classiques, elle devient la grammaire
+          comparée.
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="HIS">Histoire</term>
+        <term xml:lang="it" ref="#HIS">Storia</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#HIS" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          En linguistique interne : diachronie, linguistique évolutive (Engler, 27)
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="LAN">Langue</term>
+        <term xml:lang="it" ref="#LAN">Lingua</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#LAN" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          L'unite des langues romanes comporte le fractionnement entre le
+          français, l'italien etc.; [Cahier I, 1908-1909, Komatsu, 1997]
+          La langue c'est la partie sociale du langage
+          [Cahier VII, 1910-1911, Komatsu, 1993]
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="OB_AN_HIS">Objet d'analyse Hstorique</term>
+        <term xml:lang="it" ref="#OB_AN_HIS">Oggetto di analisi storica</term>
+      </label>
+      <item>
+        <gloss></gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="AN_AB">Analyse abstraite</term>
+        <term xml:lang="it" ref="#AN_AB">Analisi astratta</term>
+      </label>
+      <item>
+        <gloss></gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="FAI">Faits</term>
+        <term xml:lang="it" ref="#FAI">Faits</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#FAI" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          Chose reconnue comme essentielle dans telle ou telle catégorie, sous
+          tel ou tel point de vue. C'est une création de l'esprit mais
+          correspondant à des réalités (Engler, 24)
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="LOI">Loi</term>
+        <term xml:lang="it" ref="#LOI">Legge</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#LOI" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          Loi n'est pas définissable à moins de distinguer les deux choses que
+          ce nom représente. Se trouve n'être un terme applicable avec justesse
+          que dans le cas ou1 n'existe rien d'obligatoire (lois idiosynchroniques).
+          Nécessité et absurdité presque égales à désigner ainsi la formule
+          d'un événement (lois diachroniques) (Godel, 268)
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="ORG">Organique</term>
+        <term xml:lang="it" ref="#ORG">Organico</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#ORG" source="https://www.larousse.fr/dictionnaires/francais/organique/56415">
+          Qui est inhérent à la structure de quelque chose, à sa constitution
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="LANG">Language</term>
+        <term xml:lang="it" ref="#LANG">Linguaggio</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#LANG" source="https://www.larousse.fr/dictionnaires/francais/langage/46165">
+          Capacité, observée chez tous les hommes, d'exprimer leur pensée et
+          de communiquer au moyen d'un système de signes vocaux et
+          éventuellement graphiques (la langue).
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="ACC">Accident</term>
+        <term xml:lang="it" ref="#ACC">Accidentale</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#ACC" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          Fait ou événement accidentel (opposé à essentiel). En particulier
+          "les faits diachroniques sont accidentels" 1557
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="LING">Linguistique</term>
+        <term xml:lang="it" ref="#LING">Linguistica</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#LING" source="https://www.larousse.fr/dictionnaires/francais/linguistique/47271">
+          Science qui a pour objet l'étude du langage et des langues.
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="EPO">Èpoque</term>
+        <term xml:lang="it" ref="#EPO">Epoca</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#EPO" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          Point du temps, opposé à période (espace de temps). Cf. époque des
+          Antonins : « on se permet d'employer le mot opposé (époque) comme
+          synonyme (de période) parce que l'ensemble des caractères n'a pas
+          changé pendant ce temps » 1680 ; d'où : époque de langue = état
+          (Engler, 22)
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="IDI">Idiome</term>
+        <term xml:lang="it" ref="#IDI">Idioma</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#IDI" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          C'est la langue considérée dans ses caractères spéciaux, dans les
+          caractères qui sont propres à un peuple.
+          [Cahier I, 1910-1911, Komatsu, 1993]
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="FA_HI">Fait historique</term>
+        <term xml:lang="it" ref="#FA_HI">Fatto storico</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#FA_HI" source="https://fr.wiktionary.org/wiki/fait_historique">
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="PO_VU">Point de vue</term>
+        <term xml:lang="it" ref="#PO_VU">Punto di vista</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#PO_VU" source="https://www.larousse.fr/dictionnaires/francais/point_de_vue/62008">
+          Plan, aspect sous lequel on se place pour examiner quelque chose.
+          Manière qu'a quelqu'un d'envisager, de voir, de juger
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="HI_LA">Histoire de la langue</term>
+        <term xml:lang="it" ref="#HI_LA">Storia della lingua</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#HI_LA" source="https://fr.wikipedia.org/wiki/Origine_du_langage">
+          L’origine du langage humain a toujours suscité l’intérêt des penseurs.
+          Le sujet est étudié scientifiquement dans le cadre de plusieurs
+          disciplines, notamment en paléontologie, en psychologie, en biologie
+          moléculaire et en linguistique historique.
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="HISN">Historien</term>
+        <term xml:lang="it" ref="#HISN">Storico</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#HISN" source="https://www.larousse.fr/dictionnaires/francais/historien/40084">
+          Spécialiste des sciences historiques ; auteur d'ouvrages historiques.
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="DIA">Dialecte</term>
+        <term xml:lang="it" ref="#DIA">Dialetto</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#DIQ" source="http://ditmao-dev.ilc.cnr.it/saussure">
+          Ce qui fera d'un dialecte litteraire
+          [Riedlinger Cahier VII, 1908-1909, Komatsu, 1997];
+          le fait du degré de diversité. Outre l'analogie qui est
+          facile à constater, il y aura toute une échelle dans la diversité.
+          Le grec et le latin peuvent passer pour être plus voisins l'un de
+          l'autre qu'ils ne le sont réciproquement du sanscrit par exemple.
+          Et ainsi de suite, en descendant jusqu'à ce qu'on appelle les
+          dialectes. [Cahier I, 1910-1911, Komatsu, 1993]
+        </gloss>
+      </item>
+      <label>
+        <term xml:lang="fr" xml:id="ET_CH">Ètat de choses</term>
+        <term xml:lang="it" ref="#ET_CH">Stato di cose</term>
+      </label>
+      <item>
+        <gloss xml:lang="fr" target="#ET_CH" source="http://dictionnaire.sensagent.leparisien.fr/%C3%A9tat%20de%20choses/fr-fr/">
+          Situation, vue comme ensemble de toutes ses caractéristiques.
+        </gloss>
+      </item>
+    </list>
   </standOff>
   <text>
     <body>
@@ -165,7 +417,7 @@
       <div type="text" facs="B_15_zone" xml:id="B_15_div" xml:lang="fr">
         <p>
           <seg xml:id="B_15_div_1_fr">
-            C’est de cette qualité de <term>science historique</term><lb/>
+            C’est de cette qualité de <term ref="#SC_HI">science historique</term><lb/>
             que se réclamera
             <choice>
               <abbr>tte</abbr>
@@ -187,7 +439,7 @@
             </choice>
             le titre de ce cours – alors<lb/>que d’autres dénominations
             <w rend="overline">comme</w>
-            <term>
+            <term ref="#GR_CO">
               <choice>
                 <abbr rend="underline">gr.</abbr>
                 <expan>Grammaire</expan>
@@ -197,23 +449,26 @@
             sont plus usitées – je crois devoir essayer<lb/>de faire
             <del rend="line-through">un</del> le commentaire, nécessairement
             <lb/>très abrégé et incomplet, du sens qu’a ce<lb/>mot
-            <term>histoire</term> pour le linguiste.
+            <term ref="#HIS">histoire</term> pour le linguiste.
           </seg>
         </p>
       </div>
       <div type="translation" xml:id="B_15_div_IT" xml:lang="it">
         <p>
           <seg xml:id="B_15_div_1_it">
-            È a tale qualità di scienza storica che farà riferimento ogni
-            specie di studio linguistico per figurare in una
-            <objectName ref="FAC_LET">Facoltà di Lettere</objectName>.
+            È a tale qualità di <term ref="#SC_HI">scienza storica</term>
+            <lb/> che farà riferimento <lb/> ogni
+            specie di studio <lb/> linguistico per figurare in una
+            <objectName ref="FAC_LET">Facoltà di <lb/>Lettere</objectName>.
           </seg>
           <seg xml:id="B_15_div_2_it">
-            Giacché è su quest’idea di storia che s’insiste particolarmente
-            nell’intitolazione di questo corso – sebbene altre denominazioni,
-            come Grammatica comparata, siano più usate – credo di dover provare
-            a fare un commento, necessariamente molto risicato e incompleto,
-            sul senso che ha questa parola, ‘storia’, per il linguista.
+            Giacché è<lb/>su quest’idea di storia che <lb/>s’insiste
+            particolarmente nell’intitolazione di questo corso – sebbene <lb/>
+            altre denominazioni, come <term ref="#GR_CO">Grammatica comparata</term><lb/>,
+            siano più usate – credo di dover provare <lb/> a fare un commento,
+            necessariamente<lb/>molto risicato e incompleto,
+            sul senso che ha questa <lb/>parola, <term ref="#HIS">‘storia’</term>,
+            per il linguista.
           </seg>
         </p>
       </div>
@@ -234,7 +489,7 @@
               <expan>sans</expan>
             </choice>
             autre préambule, car il contient tout : plus<lb/>on étudie
-            la <term>langue</term>, plus on arrive à
+            la <term ref="#LAN">langue</term>, plus on arrive à
             <del rend="line-through">
               <unclear reason="illegible"> mieux </unclear>
             </del> se<lb/>pénétrer
@@ -242,48 +497,56 @@
               <gap atLeast="4" atMost="6" unit="chars" reason="illegible" />
             </del> de ce fait que
             <w rend="underline">tout</w> dans la
-            <term>langue</term><lb/> est <term rend="underline">histoire</term>,
+            <term ref="#LAN">langue</term><lb/> est
+            <term  ref="#HIS" rend="underline">histoire</term>,
             <choice>
               <abbr>c.à.d.</abbr>
               <expan>c’est-à-dire</expan>
             </choice> qu’elle est un
-            <term>objet</term>
+            <term ref="#OB_AN_HIS">objet</term>
             <del rend="line-through">
               <unclear reason="illegible">de cerisi-</unclear>
             </del>
-            <lb/> <term>d’analyse</term>
+            <lb/> <term ref="#OB_AN_HIS">d’analyse</term>
             <del rend="line-through">: dèration</del>
-            <term>historique</term>, et non
+            <term ref="#OB_AN_HIS">historique</term>, et non
             <del rend="line-through">de consideration</del> <lb/>
-            d’<term>analyse abstraite</term>, qu’elle se compose
-            de <term rend="underline">faits</term>, et non de <lb/>
-            <term rend="underline">lois</term>, que
+            d’<term ref="#AN_AB">analyse abstraite</term>, qu’elle se compose
+            de <term ref="#FAI" rend="underline">faits</term>, et non de <lb/>
+            <term ref="#LOI" rend="underline">lois</term>, que
             <choice>
               <abbr>tt</abbr>
               <expan>tout</expan>
             </choice> ce qui semble
-            <term rend="underline">organique</term>
+            <term ref="#ORG" rend="underline">organique</term>
             <choice>
               <abbr>d</abbr>
               <expan>dans</expan>
             </choice> le
-            <term>langage</term><lb/> est en réalité
-            <w rend="underlined">contingent</w> et
-            complètement <term>accidentel</term>.<lb/>
+            <term ref="#LANG">langage</term><lb/> est en réalité
+            <w rend="underline">contingent</w> et
+            complètement <term ref="#ACC">accidentel</term>.<lb/>
           </seg>
         </p>
       </div>
       <div type="translation" xml:id="D_15_div_IT" xml:lang="it">
         <p>
           <seg xml:id="D_15_div_1_it">
-            È su questo argomento che avrei voluto sollecitare la vostra
-            attenzione, senza quasi altro preambolo, perché esso
-            ricomprende tutto: più si studia la lingua, più si arriva a
-            prendere coscienza del fatto che tutto nella lingua è storia,
-            cioè che essa è un oggetto di analisi storica, e non di analisi
-            astratta, che si compone di fatti, e non di leggi, che
-            tutto ciò che sembra organico nel linguaggio è in realtà
-            contingente e completamente accidentale.
+            È su questo argomento<lb/>che avrei voluto sollecitare la vostra
+            attenzione,<lb/>senza quasi altro preambolo, perché esso
+            ricomprende tutto: più<lb/>si studia la <term ref="#LAN">lingua</term>,
+            più si arriva a<lb/>prendere coscienza del fatto che tutto nella
+            <term ref="#LAN">lingua</term><lb/> è storia, cioè che essa è un
+            <term ref="#OB_AN_HIS">oggetto</term><lb/>
+            <term ref="#OB_AN_HIS">di analisi</term>
+            <term ref="#OB_AN_HIS">storica</term>,
+            e non di <term ref="#AN_AB">analisi astratta</term>, che si compone di
+            <term ref="#FAI">fatti</term>, e non di<lb/>
+            <term ref="#LOI">leggi</term>, che tutto ciò che sembra
+            <term ref="#ORG">organico</term>
+            nel <term ref="#LANG">linguaggio</term><lb/>
+            è in realtà contingente e completamente
+            <term ref="#ACC">accidentale</term>.
           </seg>
         </p>
       </div>
@@ -294,7 +557,7 @@
             <num type="ordinal" value="1">1°</num>
             manière un peu superficielle<lb/>d'entendre que la
             <del rend="line-through">scien</del>
-            <term>
+            <term ref="#LING">
               <choice>
                 <abbr>linguisti.</abbr>
                 <expan>linguistique</expan>
@@ -304,7 +567,7 @@
               <abbr>I</abbr>
               <expan>une</expan>
             </choice>
-            <term>science his-<lb/>:torique</term>,
+            <term ref="#SC_HI">science his-<lb/>:torique</term>,
             c'est celle qui consiste à observer
             <del rend="line-through">
               <unclear reason="illegible">
@@ -317,9 +580,10 @@
       <div type="translation" xml:id="E_15_div_IT" xml:lang="it">
         <p>
           <seg xml:id="E_15_div_1_it">
-            C’è un primo modo, un po’ superficiale, d’intendere l’idea che
-            la linguistica sia una scienza storica, ed è quello che
-            consiste nell’osservare
+            C’è un primo modo, un po’ superficiale,<lb/> d’intendere l’idea che
+            la<lb/><term ref="#LING">linguistica</term>
+            sia una <term ref="#SC_HI">scienza<lb/>storica</term>,
+            ed è quello che consiste nell’osservare
           </seg>
         </p>
       </div>
@@ -332,68 +596,75 @@
       <div type="text" facs="B_16_zone" xml:id="B_16_div" xml:lang="fr">
         <p>
           <seg xml:id="B_16_div_1_fr">
-            qu'on ne connaît pas complètement un peuple sans connaître sa
-            <term>langue</term> ou en avoir une idée ; que la <term>langue</term>
-             est une partie
+            qu'on ne connaît pas complètement un peuple<lb/>sans connaître sa
+            <term ref="#LAN">langue</term> ou en avoir une idée ;<lb/>que la
+            <term ref="#LAN">langue</term> est une partie
              <choice>
                <sic>importte</sic>
                <corr>importante</corr>
-             </choice> du bagage des nations et contribue à
-             caractériser une <term rend="undeline">époque</term>,
+             </choice> du bagage<lb/>des nations et contribue à
+             caractériser une <term ref="#EPO" rend="undeline">époque</term>,<lb/>
              une <w rend="underline">société</w>.
           </seg>
           <seg>
             <del rend="line-through">
-              L'histoire ne peut s'interesse a c'est
+              L'histoire ne peut s'interesse a<lb/>c'est
             </del>
           </seg>
           <seg xml:id="B_16_div_2_fr">
-            La présence d'<term>idiomes</term> celtiques en
-            <placeName ref="#GAL">Gaule</placeName>,
-            et leur disparition lente sous l'influence de la
+            La présence d'<term ref="#IDI">idiomes</term> celtiques en
+            <placeName ref="#GAL">Gaule</placeName>,<lb/>
+            et leur disparition lente sous l'influence de la<lb/>
             <date from="58" to="51" >domination romaine</date>
             <del rend="line-through">en</del>constituent
             <choice>
               <abbr>p. ex. </abbr>
               <expan>par exemple </expan>
             </choice>
-            de grands <term rend="undeline">faits historiques</term>.
+            de<lb/>grands <term ref="#FA_HI" rend="undeline">faits historiques</term>.
           </seg>
           <seg xml:id="B_16_div_3_fr">
-            C'est là le <term>point de vue</term> de la ù
-            <term rend="undeline">Langue</term> <w rend="undeline">dans</w>
-            l'<term rend="undeline">Histoire</term>, mais ce n'est
-            pas <term>le point de vue</term> de
-            l'<term rend="undeline">histoire de la langue</term>.
+            C'est là le <term ref="#PO_VU">point de vue</term> de<lb/>la ù
+            <term ref="#LAN" rend="undeline">Langue</term> <w rend="undeline">dans</w>
+            l'<term ref="#HIS" rend="undeline">Histoire</term>, mais ce<lb/>n'est
+            pas <term ref="#PO_VU">le point de vue</term> de
+            l'<term ref="#HI_LA" rend="undeline">histoire de la langue</term>.
           </seg>
         </p>
       </div>
       <div type="translation" xml:id="B_16_div_IT" xml:lang="it">
         <p>
           <seg xml:id="B16_div_1_fr">
-            che non si conosce completamente un popolo senza conoscerne la
-            lingua, o almeno averne un’idea; che la lingua è una parte
-            importante del bagaglio delle nazioni e contribuisce a
-            caratterizzare un’epoca, una società.
+            che non si conosce completamente un popolo<lb/>senza conoscerne la
+            <term ref="#LAN">lingua</term>, o almeno averne un’idea;<lb/>che la
+            <term ref="#LAN">lingua</term> è una parte
+            importante del bagaglio<lb/>delle nazioni e contribuisce a
+            caratterizzare un’<term ref="#EPO">epoca</term>,<lb/>una società.
           </seg>
           <seg xml:id="B16_div_2_fr">
-            La presenza di idiomi celtici in
-            <placeName ref="#GAL">Gallia</placeName>, e la loro lenta sparizione
-            sotto l’influenza della <date from="58" to="51" >dominazione romana</date>
-            costituiscono, per esempio, grandi fatti storici.
+            La presenza di <term ref="#IDI">idiomi</term> celtici in
+            <placeName ref="#GAL">Gallia</placeName>,<lb/>e la loro lenta
+            sparizione sotto l’influenza della<lb/>
+            <date from="58" to="51" >dominazione romana</date>
+            costituiscono, per esempio,<lb/>grandi
+            <term ref="#FA_HI">fatti storici</term>.
           </seg>
           <seg xml:id="B16_div_3_fr">
-            Quello è il punto di vista della Lingua nella Storia, ma non è
-            il punto di vista della Storia della lingua.
+            Quello è il <term ref="#PO_VU">punto di vista</term> della<lb/>
+            Lingua nella Storia, ma<lb/>non è il
+            <term ref="#PO_VU">punto di vista</term> della
+            <term ref="#HI_LA">Storia della lingua</term>.
           </seg>
         </p>
       </div>
       <div type="text" facs="C_16_zone" xml:id="C_16_div" xml:lang="fr">
         <p>
           <seg xml:id="C_16_div_1_fr">
-            Il est évident que par mille <term>faits</term>
-            la <term>langue</term> in=<lb/>:téressera l'<term>historien</term>
-            ; j'ajoute même que l'<term>historie-<lb/>=n</term> ne s'y intéresse
+            Il est évident que par mille <term ref="#FAI">faits</term>
+            la <term ref="#LAN">langue</term> in=<lb/>:téressera
+            l'<term ref="#HISN">historien</term>
+            ; j'ajoute même que l'<term ref="#HISN">historie-<lb/>=n</term>
+            ne s'y intéresse
             <choice>
               <abbr>pt. être </abbr>
               <expan>peut-être </expan>
@@ -417,7 +688,7 @@
               <abbr>p. ex. </abbr>
               <expan>par example </expan>
             </choice> à se demander quelle
-            <term>langue</term> on <lb/>parlait à
+            <term ref="#LAN">langue</term> on <lb/>parlait à
             <date from="25-12-800" to="28-01-814">la cour de
             <persName ref="CAR">Charlemagne</persName> </date> - était-ce
             du roman <lb/>ou de l'allemand - et, si c'était l'allemand, était-ce
@@ -425,56 +696,59 @@
                la <lb/>dialecte
                <unclear reason="illegible">de P.</unclear>
             </del>
-            un <term>dialecte</term> disparu ou l'un des
-            <term>dia-<lb/>=lectes</term> qui se perpétuent aujourd'hui ?
+            un <term ref="#DIA">dialecte</term> disparu ou l'un des
+            <term ref="#DIA">dia-<lb/>=lectes</term> qui se perpétuent aujourd'hui ?
           </seg>
         </p>
       </div>
       <div type="translation" xml:id="C_16_div_IT" xml:lang="it">
         <p>
           <seg xml:id="C_16_div_1_it">
-            È evidente che per mille fatti la lingua interesserà lo storico;
-            e aggiungo pure che forse lo storico non se ne interessa sempre
-            quanto dovrebbe.
+            È evidente che per mille <term ref="#FAI">fatti</term> la
+            <term ref="#LAN">lingua</term> interesserà<lb/>
+            <term ref="#HISN">lo storico</term>;
+            e aggiungo pure che forse lo <term ref="#HISN">storico</term>
+            <lb/>non se ne interessa sempre quanto dovrebbe.<lb/>
           </seg>
           <seg xml:id="C_16_div_2_it">
             Ci sono pochissime persone in
-            <placeName ref="FRA">Francia</placeName>, che badino,
-            per esempio, a chiedersi quale lingua si parlasse
+            <placeName ref="FRA">Francia</placeName>, che<lb/>badino,
+            per esempio, a chiedersi quale <term ref="#LAN">lingua</term> si<lb/>parlasse
             <date from="25-12-800" to="28-01-814">alla corte di
             <persName ref="CAR">Carlo Magno </persName> </date> – se
-            fosse romanzo o germanico – e, se fosse germanico, se era un
-            dialetto sparito o uno dei dialetti che si perpetuano ancora oggi?
+            fosse romanzo<lb/>o germanico – e, se fosse germanico, se era<lb/>un
+            <term ref="#DIA">dialetto</term> sparito o uno dei<lb/>
+            <term ref="#DIA">dialetti</term> che si perpetuano ancora oggi?
           </seg>
         </p>
       </div>
       <div type="text" facs="D_16_zone" xml:id="D_16_div" xml:lang="fr">
         <p>
           <seg xml:id="D_16_div_1_fr">
-            Il y a très peu d'<term>historiens</term> <lb/> qui
+            Il y a très peu d'<term ref="#HISN">historiens</term> <lb/> qui
             remarquent que les noms des chefs Huns, <lb/> comme
             <persName ref="ATT">Attila</persName>, ne sont pas des
             noms Huns, mais des <lb/> noms germaniques, - ce qui est la preuve
-            <del rend="line-throug">d'une </del><lb/> de
-            tout un <term>état de choses</term> fort intéressant ;
+            <del rend="line-through">d'une </del><lb/> de
+            tout un <term ref="#ET_CH">état de choses</term> fort intéressant ;
           </seg>
           <seg xml:id="D_16_div_2_fr">
             et <lb/>
-            <del rend="line-throug">
+            <del rend="line-through">
               <unclear reason="unclear">
                 pa
               </unclear>
             </del>
             en <num type="ordinal" value="2">2˚</num>
             lieu que ces noms germaniques .
-            <del rend="line-throug">
+            <del rend="line-through">
               <unclear reason="unclear">
                 sant spé-<lb/>:cialut
               </unclear>
             </del>
             ne sont pas du <num type="ordinal" value="1">1°</num>
-            <term>dialecte</term> venu,
-            <del rend="line-throug">mais</del><lb/>
+            <term ref="#DIA">dialecte</term> venu,
+            <del rend="line-through">mais</del><lb/>
             <add place="left-margin">
               ne
               <choice>
@@ -484,7 +758,7 @@
             </add> sont clairement gothiques.
           </seg>
           <seg xml:id="D_16_div_3_fr">
-            Mais tous ces <term>faits</term>, grands <lb/>
+            Mais tous ces <term ref="#FAI">faits</term>, grands <lb/>
             <add place="below">ou petits,</add>
           </seg>
         </p>
@@ -492,17 +766,19 @@
       <div type="translation" xml:id="D_16_div_IT" xml:lang="it">
         <p>
           <seg xml:id="D_16_div_1_it">
-            Ci sono pochissimi storici che notino che i nomi dei capi Unni, come
+            Ci sono pochissimi <term ref="#HISN">storici</term><lb/>che notino
+            che i nomi dei capi Unni,<lb/> come
             <persName ref="ATT">Attila</persName>, non sono nomi unni,
-            ma germanici, – il che è la prova di tutto uno stato
-            di cose parecchio interessante;
+            ma<lb/>germanici, – il che è la prova<lb/>di tutto uno
+            <term ref="#ET_CH">stato di cose</term> parecchio interessante;
           </seg>
           <seg xml:id="D_16_div_2_it">
-            e in secondo luogo che questi nomi germanici non sono del primo
-            dialetto, non sono sassoni o scandinavi, ma sono chiaramente gotici.
+            e<lb/>in secondo luogo che questi nomi germanici<lb/>non sono del primo
+            <term ref="#DIA">dialetto</term>,<lb/>non sono sassoni o scandinavi, ma sono
+            chiaramente<lb/>gotici.
           </seg>
           <seg xml:id="D_16_div_3_it">
-            Ma tutti questi fatti, grandi o piccoli,
+            Ma tutti questi <term ref="#FAI">fatti</term>, grandi<lb/>o piccoli,
           </seg>
         </p>
       </div>
@@ -534,13 +810,14 @@
       <link target="#E_16_div_2_fr #E_16_div_2_it"/>
     </linkGrp>
   </text>
+
   <facsimile xml:lang="it">
     <surface xml:id="page15" start="#page-15">
       <graphic url="./img/fr_03951_01_p15.jpg" width='3378.33334px' height='4164.33334px' />
       <zone xml:id="A_15_zone" start="#A_15_div" points = ' 307,516 297,233 670,226 627,523 ' >
         <figure>
           <graphic url="./img/zone/A_15.jpg" width='273' height='273' />
-          <head>Pagina 15</head>
+          <head>Inizio pagina 15</head>
           <figDesc>
             Il numero 15 all'interno di un cerchio a simboleggiare
             l'inizio della pagina 15.
@@ -550,7 +827,7 @@
       <zone xml:id="B_15_zone" start="#B_15_div" points = ' 790,2113 2124,2053 2120,1939 3044,1869 3047,333 750,349 ' >
         <figure>
           <graphic url="./img/zone/B_15.jpg" width='2228' height='1782' />
-          <head>Sezione di testo 1</head>
+          <head>Prima sezione di testo di pagina 15</head>
           <figDesc>
             Testo francese, scritto a mano, composto di 11 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate,
@@ -562,7 +839,7 @@
       <zone xml:id="C_15_zone" start="#C_15_div" points = ' 300,1719 790,1686 777,2026 304,2046 ' >
         <figure>
           <graphic url="./img/zone/C_15.jpg" width='507' height='369' />
-          <head>Appunto a lato</head>
+          <head>Appunto a lato di pagina 15</head>
           <figDesc>
             Appunto di testo scritto a mano e barrato.
             L'appunto si trova a sinistra del testo ed è delineato a destra
@@ -573,7 +850,7 @@
       <zone xml:id="D_15_zone" start="#D_15_div" points =  ' 344,3473 3077,3326 3044,1886 2120,1949 2114,2053 330,2173 ' >
         <figure>
           <graphic url="./img/zone/D_15.jpg" width='2708' height='1508' />
-          <head>Sezione di testo 2</head>
+          <head>Sezonda sezione di testo di pagina 15</head>
           <figDesc>
             Testo francese scritto a mano, composto di 10 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate
@@ -586,7 +863,7 @@
       <zone xml:id="E_15_zone" start="#E_15_div" points =  ' 3074,3333 3087,3736 787,3879 810,3443 ' >
         <figure>
           <graphic url="./img/zone/E_15.jpg" width='2276' height='572' />
-          <head>Sezione di testo 3</head>
+          <head>Terza sezione di testo di pagina 15</head>
           <figDesc>
             Testo francese scritto a mano, composto di 3 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate.
@@ -599,7 +876,7 @@
       <zone xml:id="A_16_zone" start="#A_16_div" points = ' 296,213 642,218 649,457 299,454 ' >
         <figure>
           <graphic url="./img/zone/A_16.jpg" width='321' height='242' />
-          <head>Pagina 16</head>
+          <head>Inizio pagina 16</head>
           <figDesc>
             Il numero 16, seguito da un punto, all'interno di un ovale a
             simboleggiare l'inizio della pagina 16.
@@ -609,7 +886,7 @@
       <zone xml:id="B_16_zone" start="#B_16_div" points = ' 2994,1806 3024,356 650,353 690,1866 ' >
         <figure>
           <graphic url="./img/zone/B_16.jpg" width='2363px' height='1527px' />
-          <head>Sezione di testo 1</head>
+          <head>Prima sezione di testo di pagina 16</head>
           <figDesc>
             Testo francese scritto a mano, composto di 11 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate
@@ -620,7 +897,7 @@
       <zone xml:id="C_16_zone" start="#C_16_div" points = ' 1987,2973 1997,2873 2997,2836 3007,1840 700,1896 784,3046 ' >
         <figure>
           <graphic url="./img/zone/C_16.jpg" width='2222' height='1178' />
-          <head>Sezione di testo 2</head>
+          <head>Seconda sezione di testo di pagina 16</head>
           <figDesc>
             Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate
@@ -633,7 +910,7 @@
       <zone xml:id="D_16_zone" start="#D_16_div" points = ' 3007,2843 3010,3876 250,3880 244,3073 2020,2980 2014,2866 ' >
       <figure>
           <graphic url="./img/zone/D_16.jpg" width='2788' height='1060' />
-          <head>Sezione di testo 3</head>
+          <head>Terza sezione di testo di pagina 16</head>
           <figDesc>
             Testo francese scritto a mano, composto di 9 righe, in buone condizioni.
             Questa porzione di scritto presenta alcune sezioni di testo barrate
