@@ -192,13 +192,23 @@
    <xsl:template name = "testo" > <!-- Sezione testo -->
      <xsl:param name = "facsimile" />
      <xsl:param name = "text" />
+
+     <div id="pagine">
+       <xsl:for-each select="$facsimile/tei:surface/tei:graphic">
+         <img class="img_sezione" src="{./@url}"/>
+       </xsl:for-each>
+     </div>
+
+
      <xsl:for-each select="$facsimile/tei:surface/tei:zone/tei:figure">
        <xsl:variable name="text_id">
          <xsl:value-of select="substring (../@start ,2 )"/>
        </xsl:variable>
+
        <xsl:variable name="text_id_it">
          <xsl:value-of select="concat(substring (../@start ,2 ), '_IT')"/>
        </xsl:variable>
+
        <div class="sezione">
          <h4><xsl:value-of select = "tei:head" /></h4>
           <p class="desc"><xsl:value-of select = "tei:figDesc" /></p>
@@ -212,6 +222,7 @@
             </xsl:otherwise>
           </xsl:choose>
          </div>
+
          <div class="testi">
            <div class="testo_fr">
              <xsl:apply-templates select="$text/tei:div[@xml:id=$text_id]/tei:p"/>

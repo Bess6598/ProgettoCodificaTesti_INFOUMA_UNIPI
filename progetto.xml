@@ -42,7 +42,7 @@
           <publisher>Bibliotèque de Genève</publisher>
           <date when="1891-11">novembre 1891</date>
         </bibl>
-        <msDesc ref="#BGE">
+        <msDesc>
           <msIdentifier>
             <idno>BGE Ms. fr. 3951/1.15-16</idno>
           </msIdentifier>
@@ -417,7 +417,7 @@
         </ab>
       </div>
       <div type="text" facs="B_15_zone" xml:id="B_15_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_1A">
           <seg xml:id="B_15_div_1_fr">
             C’est de cette qualité de <term ref="#SC_HI">science historique</term><lb/>
             que se réclamera
@@ -456,7 +456,7 @@
         </p>
       </div>
       <div type="translation" xml:id="B_15_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_1A_it">
           <seg xml:id="B_15_div_1_it">
             È a tale qualità di <term ref="#SC_HI">scienza storica</term>
             <lb/> che farà riferimento <lb/> ogni
@@ -482,7 +482,7 @@
         </p>
       </div>
       <div type="text" facs="D_15_zone" xml:id="D_15_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_1B">
           <seg xml:id="D_15_div_1_fr">
             C’est sur ce sujet<lb/>que j’aurais voulu solliciter votre attention
             presque<lb/>
@@ -532,7 +532,7 @@
         </p>
       </div>
       <div type="translation" xml:id="D_15_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_1B_it">
           <seg xml:id="D_15_div_1_it">
             È su questo argomento<lb/>che avrei voluto sollecitare la vostra
             attenzione,<lb/>senza quasi altro preambolo, perché esso
@@ -553,7 +553,7 @@
         </p>
       </div>
       <div type="text" facs="E_15_zone" xml:id="E_15_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_2A">
           <seg xml:id="E_15_div_1_fr">
             Il y a une
             <num type="ordinal" value="1">1°</num>
@@ -580,7 +580,7 @@
         </p>
       </div>
       <div type="translation" xml:id="E_15_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_2A_it">
           <seg xml:id="E_15_div_1_it">
             C’è un primo modo, un po’ superficiale,<lb/> d’intendere l’idea che
             la<lb/><term ref="#LING">linguistica</term>
@@ -596,7 +596,7 @@
         </ab>
       </div>
       <div type="text" facs="B_16_zone" xml:id="B_16_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_2B">
           <seg xml:id="B_16_div_1_fr">
             qu'on ne connaît pas complètement un peuple<lb/>sans connaître sa
             <term ref="#LAN">langue</term> ou en avoir une idée ;<lb/>que la
@@ -635,7 +635,7 @@
         </p>
       </div>
       <div type="translation" xml:id="B_16_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_2B_it">
           <seg xml:id="B16_div_1_fr">
             che non si conosce completamente un popolo<lb/>senza conoscerne la
             <term ref="#LAN">lingua</term>, o almeno averne un’idea;<lb/>che la
@@ -660,7 +660,7 @@
         </p>
       </div>
       <div type="text" facs="C_16_zone" xml:id="C_16_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_2C">
           <seg xml:id="C_16_div_1_fr">
             Il est évident que par mille <term ref="#FAI">faits</term>
             la <term ref="#LAN">langue</term> in=<lb/>:téressera
@@ -704,7 +704,7 @@
         </p>
       </div>
       <div type="translation" xml:id="C_16_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_2C_it">
           <seg xml:id="C_16_div_1_it">
             È evidente che per mille <term ref="#FAI">fatti</term> la
             <term ref="#LAN">lingua</term> interesserà<lb/>
@@ -725,7 +725,7 @@
         </p>
       </div>
       <div type="text" facs="D_16_zone" xml:id="D_16_div" xml:lang="fr">
-        <p>
+        <p xml:id="p_2D">
           <seg xml:id="D_16_div_1_fr">
             Il y a très peu d'<term ref="#HISN">historiens</term> <lb/> qui
             remarquent que les noms des chefs Huns, <lb/> comme
@@ -766,7 +766,7 @@
         </p>
       </div>
       <div type="translation" xml:id="D_16_div_IT" xml:lang="it">
-        <p>
+        <p xml:id="p_2D_it">
           <seg xml:id="D_16_div_1_it">
             Ci sono pochissimi <term ref="#HISN">storici</term><lb/>che notino
             che i nomi dei capi Unni,<lb/> come
@@ -811,6 +811,10 @@
       <link target="#D_16_div_2_fr #D_16_div_2_it"/>
       <link target="#E_16_div_2_fr #E_16_div_2_it"/>
     </linkGrp>
+    <link type="join" target="#P_1A #P_1B"/>
+    <link type="join" target="#P_1A_it #P_1B_it"/>
+    <link type="join" target="#P_2A #P_2B #P_2C #P_2D"/>
+    <link type="join" target="#P_2A_it #P_2B_it #P_2C_it #P_2D_it"/>
   </text>
 
   <facsimile xml:lang="it">
