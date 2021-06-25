@@ -1,6 +1,9 @@
 # Codifica di testi
 ##### Esercizi e progetto del corso di Codifica di testi, Informatica Umanistica, Università di Pisa, Anno accademico 2020/2021
 
+### Progetto esame
+Creare una ___codifica XML-TEI___ e un ___foglio di stile XSL___ delle pagine 15-16 _(immagini 44-46)_ del manoscritto [Prolusioni 1 - Ms. fr. 3951/1][7]. Pubblicare inoltre il file html in output e file a corredo.
+
 ### Esercizi
 * __Esercizio prologo:__ creare un file _.xml_ e inserire un prologo con la dichiarazione XML e un commento con le nostre informazioni
 * __Esercizio relazioni gerarchiche:__ scrivere e fare il check di un xml non opportunamente annidato
@@ -39,3 +42,6 @@
 [4]: https://github.com/angelodel80/corsoCodifica/blob/master/progetto-esame/ProgettoCartoline/Scan_Cartoline_jpg/7694-100F.jpg
 [5]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/slides/CdT_20_21_lez7-8_TEI_editorial.pdf
 [6]: https://github.com/angelodel80/corsoCodifica/blob/master/CTaa20-21/src/template.xsl
+[7]: https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef/dao/0#id:1569219211?gallery=true&brightness=100.00&contrast=100.00&center=1689.000,-2082.000&zoom=4&rotation=0.000
+
+
