@@ -71,6 +71,14 @@ function choosePage(el) {
   }
 }
 
+function glossario(id){
+  Swal.fire({
+    title: $(id+"_titolo").text() + $(id+"_traduzione").text().replace("Traduzione: ", " - "),
+    text: $(id+"_testo").text(),
+    showConfirmButton: false
+  })
+}
+
 $( document ).ready(function() {
   $('.zoom').hide();
   choosePage(window.location.hash);
@@ -82,5 +90,9 @@ $( document ).ready(function() {
   $('img').each(function() {
     $(this).hover(zoom);
   });
-
+  $('.term').each(function() {
+    $(this).click( function() {
+      glossario($(this).attr('id'));
+    });
+  });
 });

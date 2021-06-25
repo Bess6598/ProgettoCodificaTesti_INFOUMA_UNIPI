@@ -6,29 +6,33 @@
     <fileDesc>
       <titleStmt>
         <title>Prolusioni all'università di Ginevra - pagine 15-16</title>
+        <respStmt ref="#BGE">
+          <resp>Prolusioni a cura di </resp>
+          <name ref="#SAU">Ferdinand de Saussure</name>
+        </respStmt>
+        <respStmt ref="#ECR">
+          <resp>Trascrizione a cura di </resp>
+          <name>Rudolf Engler </name>
+          <name>Simon Bouquet </name>
+        </respStmt>
+        <respStmt ref="#PRI">
+          <resp>Traduzione a cura di </resp>
+          <name>Emanuele Fadda</name>
+        </respStmt>
+        <respStmt>
+          <resp>Digitalizzazione immagini a cura di </resp>
+          <name>Bibliothèque de Genève</name>
+        </respStmt>
         <respStmt>
           <resp>Codifica XML TEI a cura di </resp>
           <name>Carolina Sgherri</name>
-        </respStmt>
-        <respStmt>
-          <resp>Trascrizione a cura di </resp>
-          <name>Rudolf Engler</name>
-          <name>Simon Bouquet</name>
-        </respStmt>
-        <respStmt>
-          <resp>Traduzione a cura di </resp>
-          <name>E. Fadda</name>
-        </respStmt>
-        <respStmt>
-          <resp>Digitalizzazione immagini </resp>
-          <name>Bibliothèque de Genève</name>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <distributor>Università di Pisa</distributor>
       </publicationStmt>
       <sourceDesc>
-        <bibl xml:lang="fr">
+        <bibl xml:id="BGE" xml:lang="fr">
           <title>
             BGE Ms. fr. 3951/1.15-16
             Trois premières conférences à l'Université
@@ -38,7 +42,7 @@
           <publisher>Bibliotèque de Genève</publisher>
           <date when="1891-11">novembre 1891</date>
         </bibl>
-        <msDesc>
+        <msDesc ref="#BGE">
           <msIdentifier>
             <idno>BGE Ms. fr. 3951/1.15-16</idno>
           </msIdentifier>
@@ -77,24 +81,22 @@
             </objectDesc>
           </physDesc>
         </msDesc>
-        <bibl xml:lang="fr">
+        <bibl xml:id="ECR" xml:lang="fr">
           <title>
             Écrits de linguistique générale
           </title>
           <author ref="#SAU">Ferdinand de Saussure</author>
-          <editor>Simon Bouquet</editor>
-          <editor>Rudolf Engler</editor>
+          <editor>Simon Bouquet </editor>
+          <editor>Rudolf Engler </editor>
           <publisher>Éditions Gallimard</publisher>
           <date when="2002-02-06">06 febbraio 2002</date>
         </bibl>
-        <bibl  xml:lang="it">
+        <bibl xml:id="PRI" xml:lang="it">
           <title>
             Prima, Seconda, Terza Prolusione
           </title>
           <author ref="#SAU">Ferdinand de Saussure</author>
-          <editor>Simon Bouquet</editor>
-          <editor>Rudolf Engler</editor>
-          <editor role="translator">Emanuele Fadda</editor>
+          <editor role="translator">Emanuele Fadda </editor>
           <date when="2006">2006</date>
         </bibl>
       </sourceDesc>
