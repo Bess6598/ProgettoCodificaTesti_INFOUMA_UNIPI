@@ -149,6 +149,16 @@ iframe {
 }
 /*---------------------------Immagini-----------------------------------------*/
 
+#pagine {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pagine img {
+  width: 40%;
+  height: auto;
+}
+
 div.img {
   display: flex;
   justify-content: space-evenly;
