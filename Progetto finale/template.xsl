@@ -21,6 +21,7 @@
           <title><xsl:value-of select="$title" /></title>
           <xsl:copy-of select="$style"/>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.all.js" integrity="sha512-L75ujuHj04ye7EqWOTRxioEKz7fQrNcYEX2+k2YMt3kG6TvLe1BAGZ7EjY0sIbEUeougiQ5Dqoean/93XLww5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
           <script type="text/javascript" src="file.js"></script>
         </head>
         <body>
@@ -57,7 +58,26 @@
 
             <div class="index">
               <div id="home_page">
-                Home page provvisoria
+                <xsl:for-each select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt">
+                  <xsl:variable name="id">
+                    <xsl:value-of select="substring (./@ref ,2 )" />
+                  </xsl:variable>
+                  <xsl:variable name="idio">
+                    <xsl:value-of select="./@ref" />
+                  </xsl:variable>
+                  <h4> <xsl:value-of select="substring-before(tei:resp,'a cura di ')" /> </h4>
+                  <p>A cura di:
+                    <xsl:for-each select="tei:name">
+                      <xsl:value-of select="." />
+                    </xsl:for-each>
+                  </p>
+                  <xsl:if test="../../tei:sourceDesc/tei:bibl[@xml:id=$id]">
+                    <p>
+                      <xsl:value-of select="../../tei:sourceDesc/tei:bibl[@xml:id=$id]/tei:title" /> -
+                      <xsl:value-of select="../../tei:sourceDesc/tei:bibl[@xml:id=$id]/tei:date" />
+                    </p>
+                  </xsl:if>
+                </xsl:for-each>
               </div>
               <div id="persone_page">
                 <h2>Persone</h2>
@@ -94,6 +114,7 @@
               </div>
             </div>
             <footer>
+              <hr id="hr_footer" />
               <p>
                 Sito realizzato da
                 <a  title="Pagina GitHub"  href="https://github.com/Bess6598" target="_blank" >
@@ -151,13 +172,18 @@
        <xsl:variable name="n">
          <xsl:value-of select="./@n"/>
        </xsl:variable>
+       <xsl:variable name="id">
+         <xsl:value-of select="tei:term/@xml:id"/>
+       </xsl:variable>
        <div>
-          <h4><xsl:value-of select="tei:term[@xml:lang='fr']"/></h4>
-          <p>
+          <h4 id="{$id}_titolo"><xsl:value-of select="tei:term[@xml:lang='fr']"/></h4>
+          <p id="{$id}_traduzione">
             <span>Traduzione: </span>
             <xsl:value-of select="tei:term[@xml:lang='it']"/>
           </p>
-          <p><xsl:value-of select="../tei:item[@n=$n]/tei:gloss"/></p>
+          <p id="{$id}_testo">
+            <xsl:value-of select="../tei:item[@n=$n]/tei:gloss"/>
+          </p>
        </div>
      </xsl:for-each>
    </xsl:template>
@@ -205,7 +231,7 @@
    </xsl:template>
 
    <xsl:template match="tei:term">
-     <span class="term"><xsl:apply-templates/></span>
+     <span id="{./@ref}" class="term"><xsl:apply-templates/></span>
    </xsl:template>
 
   <xsl:template match="tei:lb">
