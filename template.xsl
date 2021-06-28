@@ -31,8 +31,8 @@
               <h1> <xsl:copy-of select="$title"/> </h1>
               <p class="subtitle">
                 Autore <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:bibl/tei:author" /> |
-                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp" />
-                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:name" />
+                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt[@xml:id='COD']/tei:resp" />
+                <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt[@xml:id='COD']/tei:name" />
               </p>
             </div>
             <ul id="menu">
