@@ -6,24 +6,24 @@
     <fileDesc>
       <titleStmt>
         <title>Prolusioni all'università di Ginevra - pagine 15-16</title>
-        <respStmt ref="#BGE">
+        <respStmt xml:id="PRO" ref="#BGE">
           <resp>Prolusioni a cura di </resp>
           <name ref="#SAU">Ferdinand de Saussure</name>
         </respStmt>
-        <respStmt ref="#ECR">
+        <respStmt xml:id="TRAS" ref="#ECR">
           <resp>Trascrizione a cura di </resp>
           <name>Rudolf Engler </name>
           <name>Simon Bouquet </name>
         </respStmt>
-        <respStmt ref="#PRI">
+        <respStmt xml:id="TRAD" ref="#PRI">
           <resp>Traduzione a cura di </resp>
           <name>Emanuele Fadda</name>
         </respStmt>
-        <respStmt>
+        <respStmt xml:id="DIG">
           <resp>Digitalizzazione immagini a cura di </resp>
           <name>Bibliothèque de Genève</name>
         </respStmt>
-        <respStmt>
+        <respStmt xml:id="COD">
           <resp>Codifica XML TEI a cura di </resp>
           <name>Carolina Sgherri</name>
         </respStmt>
